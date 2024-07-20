@@ -1,7 +1,21 @@
 <script>
-  import Layout from './+layout.svelte';
+  import Layout from "./+layout.svelte";
 </script>
 
-<div class="flex-container">
-  <h1 class="text-xl font-bold">adi's website</h1>
+<div>
+  <h1 class="my-5">hi, i'm aditya!</h1>
+  <p>welcome to my neck of the woods.🌲</p>
+  <p>
+    i recently graduated from the <a
+      class="font-bold"
+      href="https://www.umass.edu">university of massachusetts amherst</a
+    >, with a major in computer science and minor in biology.
+  </p>
+  <p>
+    currently i'm a software engineer at <a
+      class="font-bold"
+      href="https://www.leafpoint.com">leafpoint</a
+    >, where i'm working full-stack on our web app.
+  </p>
+  <p class="border-2 border-dashed">i'm also looking for a job!</p>
 </div>
