@@ -3,10 +3,6 @@
 </script>
 
 <svelte:head>
-  <script
-    src="https://kit.fontawesome.com/ace081f8c7.js"
-    crossorigin="anonymous"
-  ></script>
   <style>
     @import url("https://fonts.googleapis.com/css2?family=Noto+Sans+Mono:wght@100..900&display=swap");
   </style>
@@ -20,7 +16,8 @@
       <a class="" href="/about">about</a>
       <a class="" href="/projects">projects</a>
       <a class="" href="/blog">blog</a>
-      <a class="" href="/">day</a>
+      <a class="" href="/photos">photos</a>
+      <a class="" href="/">jedi</a>
     </nav>
 
     <!-- content goes here -->
@@ -32,19 +29,19 @@
       <a
         href="https://linkedin.com/in/aditya-naithani/"
         target="_blank"
-        class="fa-brands fa-linkedin fa-xl hover:text-mantis"
+        class="fa-brands fa-linkedin fa-xl"
         aria-label="LinkedIn"
       ></a>
       <a
         href="https://github.com/adityanaithani"
         target="_blank"
-        class="fa-brands fa-github fa-xl hover:text-mantis"
+        class="fa-brands fa-github fa-xl"
         aria-label="GitHub"
       ></a>
       <a
         href="mailto:aditya.naith@protonmail.com"
         target="_blank"
-        class="fa-solid fa-envelope fa-xl hover:text-mantis"
+        class="fa-solid fa-envelope fa-xl"
         aria-label="Email"
       ></a>
     </p>

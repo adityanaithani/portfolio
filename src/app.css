@@ -4,7 +4,7 @@
 
 @layer base {
   body {
-    @apply text-copygrey bg-bgwhite mx-auto my-20 block max-w-screen-sm px-5 font-sans text-xl leading-relaxed;
+    @apply text-copygrey dark:text-bgwhite bg-bgwhite dark:bg-darkmodegrey mx-auto my-20 block max-w-screen-md px-5 font-sans text-xl leading-relaxed;
   }
   h1 {
     @apply text-4xl font-bold;
@@ -20,5 +20,5 @@ p {
   @apply my-5 text-xl;
 }
 a {
-  @apply hover:text-mantis;
+  @apply hover:text-mantis dark:hover:text-mantis;
 }

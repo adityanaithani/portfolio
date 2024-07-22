@@ -7,13 +7,13 @@
   <p>welcome to my neck of the woods.🌲</p>
   <p>
     i recently graduated from the <a
-      class="font-bold"
+      class="font-semibold"
       href="https://www.umass.edu">university of massachusetts amherst</a
-    >, with a major in computer science and minor in biology.
+    > with a bachelor's in computer science and minor in biology.
   </p>
   <p>
     currently i'm a software engineer at <a
-      class="font-bold"
+      class="font-semibold"
       href="https://www.leafpoint.com">leafpoint</a
     >, where i'm working full-stack on our web app.
   </p>
