@@ -44,6 +44,12 @@
     time. i have far too many interests to really keep track of, but these should
     about cover the gamut.
   </p>
+
+  <p>
+    if you're curious, here's my <a class="font-bold" href="/about/resume"
+      >resume</a
+    >!
+  </p>
 </div>
 
 <!-- school -->

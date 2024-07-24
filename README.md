@@ -7,5 +7,5 @@ features todo:
 - [ ] dark mode selector
 - [ ] blog
 - [ ] projects
-- [ ] resume
+- [x] embed resume
 - [ ] finalize font + colour scheme
