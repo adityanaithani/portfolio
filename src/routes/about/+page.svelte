@@ -1,6 +1,6 @@
 <div class="">
   <enhanced:img
-    class="max-w-36 rounded-md"
+    class="aspect-square max-w-36 rounded-md"
     src="./adi.png"
     alt="me graduating!"
   />

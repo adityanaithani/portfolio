@@ -1,5 +1,46 @@
 <script>
   import "../app.css";
+  import { onMount } from "svelte";
+
+  let theme = "neutral"; // neutral, light, dark
+
+  function toggleTheme() {
+    if (theme === "neutral") {
+      theme = "light";
+    } else if (theme === "light") {
+      theme = "dark";
+    } else {
+      theme = "neutral";
+    }
+    applyTheme();
+  }
+
+  function applyTheme() {
+    if (theme === "dark") {
+      document.documentElement.classList.add("dark");
+      localStorage.setItem("theme", "dark");
+    } else if (theme === "light") {
+      document.documentElement.classList.remove("dark");
+      localStorage.setItem("theme", "light");
+    } else {
+      localStorage.removeItem("theme");
+    }
+  }
+
+  onMount(() => {
+    const savedTheme = localStorage.getItem("theme");
+    if (savedTheme) {
+      theme = savedTheme;
+      applyTheme();
+    }
+  });
+
+  $: hoverClass =
+    theme === "neutral"
+      ? "hover:text-copygrey"
+      : theme === "light"
+        ? "hover:text-mantis"
+        : "hover:text-pink";
 </script>
 
 <svelte:head>
@@ -17,7 +58,13 @@
       <a class="" href="/projects">projects</a>
       <a class="" href="/blog">blog</a>
       <a class="" href="/photos">photos</a>
-      <a class="" href="/">jedi</a>
+      <button
+        on:click={toggleTheme}
+        class="text-gray-800 dark:text-gray-20 {hoverClass}"
+      >
+        {theme === "neutral" ? "os" : theme === "light" ? "jedi" : "sith"}
+        <!-- listen i told you i liked star wars -->
+      </button>
     </nav>
 
     <!-- content goes here -->
