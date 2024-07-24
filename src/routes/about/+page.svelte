@@ -6,9 +6,13 @@
   />
   <p>hi! i'm aditya, thanks for stopping by :&#41;</p>
   <p>
+    i'm a (former) student currently based out of toronto, canada, which is
+    where i spent the latter half of growing up.
+  </p>
+  <p>
     i recently graduated from umass amherst with a bachelor of science degree in
-    computer science (and a minor in biology) and am currently searching for a
-    full-time software engineering role.
+    computer science (plus a minor in biology) and am at the moment searching
+    for a full-time software engineering role.
   </p>
 
   <p>when i was in school, you could have caught me:</p>
@@ -24,23 +28,21 @@
   </ul>
 
   <p>
-    i have way too many interests and hobbies to keep track of - i've always
-    been an avid photographer (check out my portfolio soon) photo computers
-    keyboards star wars video games music fashion running cooking
+    i've always been an avid photographer, i enjoy building computers and
+    keyboards, video games, music, fashion, running, cooking, and i retain far
+    too much knowledge about star wars lore than should be allowed.
   </p>
 
   <p>
-    i'm currently really enjoying reading about transit, infrastructure and city
+    i've been really enjoying reading about transit, infrastructure and city
     design, i've been perusing a <a
       class="font-bold"
       href="https://theurbangeographer.wordpress.com/">couple</a
     >
-    <a
-      class="font-bold"
-      href="https://spacing.ca/toronto/2013/10/23/torontos-and-chicagos-street-grids/"
-      >blogs</a
-    > (both by fellow canadians!) recently, and i usually have a couple wikipedia
-    pages up on my phone at any given time.
+    <a class="font-bold" href="https://spacing.ca">blogs</a> (both by fellow canadians!)
+    recently, and i usually have a couple wikipedia pages up on my phone at any given
+    time. i have far too many interests to really keep track of, but these should
+    about cover the gamut.
   </p>
 </div>
 
