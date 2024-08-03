@@ -2,6 +2,10 @@
   export let data;
 </script>
 
+<svelte:head>
+  <title>adi's blog</title>
+</svelte:head>
+
 <div>
   <h1>blog</h1>
   <ul>

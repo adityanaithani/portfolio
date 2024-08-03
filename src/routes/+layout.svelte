@@ -1,6 +1,7 @@
 <script>
   import "../app.css";
   import { onMount } from "svelte";
+  import { fade } from "svelte/transition";
 
   let theme = "neutral"; // neutral, light, dark
 
@@ -52,7 +53,7 @@
 
 <div id="all-content" class="content-top">
   <div id="vertical-content" class="flex flex-row space-x-12">
-    <nav class="my-5 max-w-14 text-lg">
+    <nav class="my-5 max-w-14 text-xl">
       <a class="" href="/">home</a>
       <a class="" href="/about">about</a>
       <a class="" href="/projects">projects</a>
@@ -67,7 +68,6 @@
       </button>
     </nav>
 
-    <!-- content goes here -->
     <slot></slot>
   </div>
 
