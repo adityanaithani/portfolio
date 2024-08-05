@@ -1,3 +1,7 @@
+<svelte:head>
+  <title>about adi</title>
+</svelte:head>
+
 <div class="">
   <enhanced:img
     class="aspect-square max-w-36 rounded-md"

@@ -2,6 +2,10 @@
   import Layout from "./+layout.svelte";
 </script>
 
+<svelte:head>
+  <title>adi's home</title>
+</svelte:head>
+
 <div>
   <h1 class="my-5">hi, i'm aditya!</h1>
   <p>welcome to my neck of the woods.🌲</p>
