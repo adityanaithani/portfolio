@@ -8,7 +8,7 @@
     {#if data.posts.length > 0}
       {#each data.posts as post}
         <li>
-          <a href={post.path}>{post.meta.title}</a>
+          <a class="font-medium" href={post.path}>{post.meta.title}</a>
         </li>
       {/each}
     {:else}

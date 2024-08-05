@@ -1,6 +1,6 @@
 ---
-title: Post Two
-date: "2024-08-02"
+title: a calmer post
+date: "august 3, 2024"
 categories:
   - "numbers"
   - "even"

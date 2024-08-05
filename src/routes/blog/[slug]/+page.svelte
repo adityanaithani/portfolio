@@ -4,18 +4,18 @@
 
 <svelte:head>
   <title>adi's blog - {data.title}</title>
+  <meta property="og:title" content={data.title} />
 </svelte:head>
 
 <div>
-  <article>
+  <article class="my-5">
     <h1>{data.title}</h1>
-    <p>Published: {data.date}</p>
+    <p>posted {data.date}</p>
     <svelte:component this={data.content} />
   </article>
-
+  <!-- categories section -->
   {#if data.categories.length}
     <aside>
-      <!-- <p>posted in:</p> -->
       <ul class="justify-left flex flex-wrap gap-x-2">
         {#each data.categories as category}
           <li
