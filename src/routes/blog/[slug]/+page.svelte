@@ -10,7 +10,10 @@
 <div>
   <article class="my-5">
     <h1>{data.title}</h1>
-    <p>posted {data.date}</p>
+    <p class="my-1">posted {data.date}</p>
+    {#if data.updated}
+      <p class="my-1">updated {data.updated}</p>
+    {/if}
     <svelte:component this={data.content} />
   </article>
   <!-- categories section -->

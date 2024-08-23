@@ -1,5 +1,5 @@
 ---
-title: like the craziest post
+title: test1
 date: "2024-08-01"
 categories:
   - "numbers"

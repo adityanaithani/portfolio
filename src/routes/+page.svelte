@@ -16,10 +16,11 @@
     > with a bachelor's in computer science and minor in biology.
   </p>
   <p>
-    currently i'm a software engineer at <a
-      class="font-semibold"
-      href="https://www.leafpoint.com">leafpoint</a
-    >, where i'm working full-stack on our web app.
+    i am currently searching for a full-time software engineering role, and in
+    the meantime, learning new things through a few personal projects.
   </p>
-  <p class="border-2 border-dashed">i'm also looking for a job!</p>
+  <p>
+    this website exists mostly for me to keep a handle on my ever-changing array
+    of interests, but it's also here so i can share my work (of various forms).
+  </p>
 </div>
