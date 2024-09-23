@@ -1,11 +1,10 @@
 ---
 title: this website
 date: "august 5, 2024"
-updated: ""
+updated: "september 23, 2024"
 categories:
   - "devlog"
   - "svelte"
-  - "web development"
 ---
 
 ...so i've been meaning to put a personal website together since high school. thanks to maybe one of the greatest feats of procrastination ever, i only started working on it the summer after i graduated college.
@@ -45,6 +44,6 @@ keeping this in mind, a few things i wanted to at least suggest were:
 
 ## future plans
 
-- photo gallery
-- project gallery
+- photo gallery (coming soon!)
+- project gallery (coming soon!)
 - actually implement list styling
