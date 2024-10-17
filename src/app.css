@@ -22,3 +22,9 @@ p {
 a {
   @apply hover:text-mantis dark:hover:text-mantis;
 }
+detail {
+  /* @apply open:ring-black/2 dark:open:ring-white/10 rounded-lg open:shadow-lg open:ring-1; */
+}
+summary {
+  @apply select-none font-normal;
+}
