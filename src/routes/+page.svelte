@@ -7,20 +7,24 @@
 </svelte:head>
 
 <div>
-  <h1 class="my-5">hi, i'm aditya!</h1>
-  <p>welcome to my neck of the woods.🌲</p>
-  <p>
-    i recently graduated from the <a
-      class="font-semibold"
-      href="https://www.umass.edu">university of massachusetts amherst</a
-    > with a bachelor's in computer science and minor in biology.
-  </p>
-  <p>
-    i am currently searching for a full-time software engineering role, and in
-    the meantime, learning new things through a few personal projects.
-  </p>
-  <p>
-    this website exists mostly for me to keep a handle on my ever-changing array
-    of interests, but it's also here so i can share my work (of various forms).
-  </p>
+  <svg
+    width="451"
+    height="189"
+    viewBox="0 0 451 189"
+    fill="none"
+    xmlns="http://www.w3.org/2000/svg"
+  >
+    <path
+      fill-rule="evenodd"
+      clip-rule="evenodd"
+      d="M62.8572 0H125.714V62.8571H62.8572V0ZM62.8571 125.714L62.8572 62.8571H0V125.714H60.6571V188.571H125.714L125.714 125.714V188.571H190.771V125.714V62.8571H125.714L125.714 125.714H62.8571Z"
+      fill="#EEEEEE"
+    />
+    <path
+      fill-rule="evenodd"
+      clip-rule="evenodd"
+      d="M255.829 62.8571V0H320.886H385.943V62.8571H320.886V125.714V188.571H255.829V125.714V62.8571ZM385.943 62.8571H451V125.714V188.571H385.943V125.714V62.8571Z"
+      fill="#EEEEEE"
+    />
+  </svg>
 </div>
