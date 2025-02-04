@@ -1,10 +1,12 @@
+/* @import tailwindcss; */
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
 @layer base {
   body {
-    @apply mx-auto my-20 block max-w-screen-md bg-bgwhite px-5 font-sans text-xl leading-relaxed text-copygrey dark:bg-darkmodegrey dark:text-bgwhite;
+    @apply bg-obsidian text-chalk mx-auto my-20 block max-w-screen-md px-5 font-sans text-xl leading-relaxed;
+    @apply bg-obsidian absolute inset-0 h-full w-full bg-[radial-gradient(#333333_1px,transparent_1px)] [background-size:32px_32px];
   }
   h1 {
     @apply font-sans text-4xl font-bold;
@@ -16,11 +18,12 @@
     @apply my-5 text-xl font-bold;
   }
 }
+
 p {
   @apply my-5 text-xl leading-relaxed;
 }
 a {
-  @apply hover:text-mantis dark:hover:text-mantis;
+  @apply hover:text-leaf;
 }
 detail {
   /* @apply open:ring-black/2 dark:open:ring-white/10 rounded-lg open:shadow-lg open:ring-1; */
