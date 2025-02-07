@@ -4,14 +4,13 @@
 </script>
 
 <svelte:head>
-  <title>adi's notebook</title>
+  <title>adityanaithani</title>
 </svelte:head>
 
-<div id="logo-container" class="p-20">
+<div id="logo" class="flex justify-center px-10">
   <svg
     width="451"
     height="189"
-    id="logo"
     viewBox="0 0 451 189"
     fill="none"
     xmlns="http://www.w3.org/2000/svg"

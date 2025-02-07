@@ -1,18 +1,17 @@
-/* @import tailwindcss; */
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
 @layer base {
   body {
-    @apply bg-obsidian text-chalk mx-auto my-20 block max-w-screen-md px-5 font-sans text-xl leading-relaxed;
-    @apply bg-obsidian absolute inset-0 h-full w-full bg-[radial-gradient(#333333_1px,transparent_1px)] [background-size:32px_32px];
+    @apply font-jetbrains mx-auto block max-w-screen-md bg-obsidian px-5 text-xl leading-relaxed text-chalk;
+    @apply absolute inset-0 h-full w-full bg-obsidian bg-[radial-gradient(#333333_1px,transparent_1px)] [background-size:32px_32px];
   }
   h1 {
-    @apply font-sans text-4xl font-bold;
+    @apply text-4xl font-bold;
   }
   h2 {
-    @apply my-5 font-sans text-2xl font-bold;
+    @apply my-5 text-2xl font-bold;
   }
   h3 {
     @apply my-5 text-xl font-bold;

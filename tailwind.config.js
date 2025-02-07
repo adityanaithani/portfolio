@@ -4,7 +4,11 @@ module.exports = {
   plugins: [],
   darkMode: "selector",
   theme: {
-    extend: {},
+    extend: {
+      fontFamily: {
+        jetbrains: ["JetBrains Mono", "monospace"],
+      },
+    },
     colors: {
       obsidian: "#222222",
       rock: "#333333",

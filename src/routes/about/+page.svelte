@@ -8,12 +8,22 @@
     src="./adi.png"
     alt="me graduating!"
   />
-  <p>hey! thanks for stopping by :&#41;</p>
-  <p>i'm a (former) student currently based out of toronto, canada.</p>
+  <p>Hello there! Thanks for stopping by :&#41;</p>
+  <p>I'm Aditya, a recent grad from the universerity of massachusetts</p>
   <p>
     i recently graduated from umass amherst with a bachelor of science degree in
     computer science (plus a minor in biology).
   </p>
+
+  <!--
+  1. who i am 
+  2. what i do 
+  3. previously
+  lp/hypr
+  uma
+  4. webring
+  5. socials
+  -->
 
   <!-- <p>when i was in school, you could have caught me:</p>
   <ul class="list-inside list-disc">
@@ -43,8 +53,34 @@
     about cover the gamut.
   </p> -->
 
-  <p class="border-2 border-dashed px-1">
-    lastly, here's my <a class="font-bold" href="/about/resume">resume</a>!
+  <p class="border-2 border-dashed p-2">
+    lastly, here's my (hopefully updated) <a
+      class="font-bold"
+      href="/about/resume">resume</a
+    >!
+  </p>
+
+  <span><a href="/about">←</a> umass webring <a href="/about">→</a></span>
+
+  <p id="socials" class="space-x-2">
+    <a
+      href="mailto:aditya.naith@protonmail.com"
+      target="_blank"
+      class="fa-solid fa-envelope fa-xl"
+      aria-label="Email"
+    ></a>
+    <a
+      href="https://linkedin.com/in/aditya-naithani/"
+      target="_blank"
+      class="fa-brands fa-linkedin fa-xl"
+      aria-label="LinkedIn"
+    ></a>
+    <a
+      href="https://github.com/adityanaithani"
+      target="_blank"
+      class="fa-brands fa-github fa-xl"
+      aria-label="GitHub"
+    ></a>
   </p>
 </div>
 
