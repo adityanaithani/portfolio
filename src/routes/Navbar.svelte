@@ -5,20 +5,26 @@
 </script>
 
 <nav class="my-5 max-w-14 text-2xl">
-  <a class="hover:text-sea" href="/">home</a>
-  <a class="hover:text-leaf" href="/about" class:about={routeId == "/about"}
-    >about</a
+  <a class="duration-200 ease-in-out hover:text-sea" href="/">home</a>
+  <a
+    class="duration-200 ease-in-out hover:text-leaf"
+    href="/about"
+    class:about={routeId == "/about"}>about</a
   >
   <a
-    class="hover:text-lavender"
+    class="duration-200 ease-in-out hover:text-lavender"
     href="/projects"
     class:projects={routeId == "/projects"}>projects</a
   >
-  <a class="hover:text-sunflower" href="/blog" class:blog={routeId == "/blog"}
-    >blog</a
+  <a
+    class=" duration-200 ease-in-out hover:text-sunflower"
+    href="/blog"
+    class:blog={routeId == "/blog"}>blog</a
   >
-  <a class="hover:text-lava" href="/photos" class:photos={routeId == "/photos"}
-    >photos</a
+  <a
+    class="duration-200 ease-in-out hover:text-lava"
+    href="/photos"
+    class:photos={routeId == "/photos"}>photos</a
   >
 </nav>
 
