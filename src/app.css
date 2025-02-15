@@ -4,7 +4,7 @@
 
 @layer base {
   body {
-    @apply font-jetbrains mx-auto mt-auto block max-w-screen-md place-content-center bg-obsidian px-5 text-xl leading-relaxed text-chalk;
+    @apply mx-auto mt-auto block max-w-screen-md place-content-center bg-obsidian px-5 font-jetbrains text-xl leading-relaxed text-chalk;
     @apply absolute inset-0 h-full w-full bg-obsidian bg-[radial-gradient(#333333_1px,transparent_1px)] [background-size:32px_32px];
   }
   h1 {
@@ -22,7 +22,7 @@ p {
   @apply my-5 text-xl leading-relaxed;
 }
 a {
-  @apply hover:text-leaf;
+  @apply duration-200 ease-out hover:text-leaf;
 }
 detail {
   /* @apply open:ring-black/2 dark:open:ring-white/10 rounded-lg open:shadow-lg open:ring-1; */

@@ -54,12 +54,10 @@
   </p> -->
 
   <p class="border-2 border-dashed p-2">
-    lastly, here's my (hopefully updated) <a
-      class="font-bold"
-      href="/about/resume">resume</a
-    >!
+    lastly, here's my <a class="font-bold" href="/about/resume">resume</a>!
   </p>
 
+  <!-- finish this after you get your link on the repo (umaring on github) -->
   <span><a href="/about">←</a> umass webring <a href="/about">→</a></span>
 
   <p id="socials" class="space-x-2">
@@ -76,7 +74,7 @@
       aria-label="LinkedIn"
     ></a>
     <a
-      href="https://github.com/adityanaithani"
+      href="https://github.com/anaithani"
       target="_blank"
       class="fa-brands fa-github fa-xl"
       aria-label="GitHub"
