@@ -4,17 +4,53 @@
 
 <div class="">
   <enhanced:img
-    class="aspect-square max-w-36 rounded-md"
+    class="aspect-square max-w-36 rounded-md shadow-sm shadow-rock"
     src="./adi.png"
     alt="me graduating!"
+    title="me graduating!"
   />
-  <p>Hello there! Thanks for stopping by :&#41;</p>
-  <p>I'm Aditya, a recent grad from the universerity of massachusetts</p>
   <p>
-    i recently graduated from umass amherst with a bachelor of science degree in
-    computer science (plus a minor in biology).
+    <a
+      href="https://media4.giphy.com/media/v1.Y2lkPTc5MGI3NjExeDQ2aG10aWV6aGMxZWxuemIzanp6cW56MGw1a2t1dDV4d2VpMHB4biZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/xTiIzJSKB4l7xTouE8/giphy.gif"
+      class="font-bold">Hello there</a
+    >, I'm Aditya! Thanks for stopping by :&#41;.
   </p>
-
+  <p>
+    I'm a software engineer and recent graduate from the University of
+    Massachuetts Amherst.
+  </p>
+  <p>
+    I'm currently on the hunt for a full-time software engineering job, so if
+    you or your friends are hiring, feel free to shoot me an email!
+  </p>
+  <p>Previously, I:</p>
+  <ul class="list-inside list-disc">
+    <li>
+      graduated from <span class="text-lava">UMass</span>, majoring in
+      <span class="text-sea"> computer science </span> and minoring in
+      <span class="text-leaf">biology</span>
+    </li>
+    <li>
+      worked as a software engineer for <span class="text-leaf">Leafpoint</span>
+    </li>
+    <li>
+      interned for <a
+        class="font-bold text-lavender underline"
+        href="https://www.hypr.com/">HYPR</a
+      > as a software engineer
+    </li>
+    <li>
+      taught <span class="text-sunflower">CS 198C</span>, UMass CICS' intro to C
+      class
+    </li>
+    <li>
+      had the best time as a <span class="text-lava">resident assistant</span>
+    </li>
+    <li>
+      co-wrote a paper (awaiting peer review) on the discovery and annotation of
+      a <span class="text-leaf">novel bacteriophage</span>!
+    </li>
+  </ul>
   <!--
   1. who i am 
   2. what i do 
@@ -25,36 +61,11 @@
   5. socials
   -->
 
-  <!-- <p>when i was in school, you could have caught me:</p>
-  <ul class="list-inside list-disc">
-    <li>holding office hours as an undergraduate course assistant</li>
-    <li>responding to 4am fire alarms as a resident assistant</li>
-    <li>tripping over my two left feet on the ballroom dance team</li>
-    <li>having the liveliest debates at product management club</li>
-    <li>stargazing with the astronomy club</li>
-    to name a few!
-  </ul> -->
-
-  <!-- <p>
-    i've always been an avid photographer, i enjoy building computers and
-    keyboards, video games, music, fashion, running, cooking, and i retain far
-    too much knowledge about star wars lore than should be allowed.
-  </p> -->
-
-  <!-- <p>
-    i've been really enjoying reading about transit, infrastructure and city
-    design, i've been perusing a <a
-      class="font-bold"
-      href="https://theurbangeographer.wordpress.com/">couple</a
-    >
-    <a class="font-bold" href="https://spacing.ca">blogs</a> (both by fellow canadians!)
-    recently, and i usually have a couple wikipedia pages up on my phone at any given
-    time. i have far too many interests to really keep track of, but these should
-    about cover the gamut.
-  </p> -->
-
   <p class="border-2 border-dashed p-2">
-    lastly, here's my <a class="font-bold" href="/about/resume">resume</a>!
+    lastly, here's my <a
+      class="font-bold text-lavender underline"
+      href="/about/resume">resume</a
+    >!
   </p>
 
   <!-- finish this after you get your link on the repo (umaring on github) -->
