@@ -8,7 +8,7 @@
     @apply absolute inset-0 h-full w-full bg-obsidian bg-[radial-gradient(#333333_1px,transparent_1px)] [background-size:32px_32px];
   }
   h1 {
-    @apply text-4xl font-bold;
+    @apply py-5 text-4xl font-bold;
   }
   h2 {
     @apply my-5 text-2xl font-bold;

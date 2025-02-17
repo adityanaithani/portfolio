@@ -4,12 +4,12 @@
   $: routeId = $page.route.id;
 </script>
 
-<nav class="my-5 max-w-14 text-2xl">
+<nav class="my-5 max-w-14 text-2xl text-hwhite">
   <a class="duration-200 ease-out hover:text-sea" href="/">home</a>
   <a
     class="duration-200 ease-out hover:text-leaf"
     href="/about"
-    class:about={routeId == "/about"}>about</a
+    class:about={routeId.startsWith("/about")}>about</a
   >
   <a
     class="duration-200 ease-out hover:text-lavender"
@@ -19,7 +19,7 @@
   <a
     class=" duration-200 ease-out hover:text-sunflower"
     href="/blog"
-    class:blog={routeId == "/blog"}>blog</a
+    class:blog={routeId.startsWith("/blog")}>blog</a
   >
   <a
     class="duration-200 ease-out hover:text-lava"

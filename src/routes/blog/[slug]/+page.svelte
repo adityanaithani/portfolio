@@ -9,10 +9,10 @@
 
 <div>
   <article class="my-5">
-    <h1>{data.title}</h1>
-    <p class="my-1">posted {data.date}</p>
+    <h1 class="text-hwhite">{data.title}</h1>
+    <p class="my-1 text-cliff">posted {data.date}</p>
     {#if data.updated}
-      <p class="my-1">updated {data.updated}</p>
+      <p class="my-1 text-cliff">updated {data.updated}</p>
     {/if}
     <svelte:component this={data.content} />
   </article>
@@ -21,10 +21,8 @@
     <aside>
       <ul class="justify-left flex flex-wrap gap-x-2">
         {#each data.categories as category}
-          <li
-            class="border-1 rounded-sm bg-copygrey/40 px-2 text-lg dark:bg-bgwhite/25"
-          >
-            <a href="/blog/category/{category}">
+          <li class="border-1 rounded-sm bg-chalk/10 px-2 text-lg">
+            <a class="hover:text-sunflower" href="/blog/category/{category}">
               {category}
             </a>
           </li>

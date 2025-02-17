@@ -13,6 +13,7 @@ module.exports = {
       obsidian: "#222222",
       rock: "#333333",
       chalk: "#D9D9D9",
+      cliff: "#A5A5A5",
       hwhite: "#EEEEEE",
       lavender: "#A59FE9",
       sea: "#0084A4",

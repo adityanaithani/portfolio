@@ -1,7 +1,7 @@
 ---
 title: this website
-date: "august 5, 2024"
-updated: "january 21, 2025"
+date: "08/05/2024"
+updated: "01/21/2025"
 categories:
   - "devlog"
   - "svelte"
