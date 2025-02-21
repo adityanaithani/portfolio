@@ -6,8 +6,8 @@
   <title>adi's blog</title>
 </svelte:head>
 
-<div class="my-5">
-  <h1>blog</h1>
+<div class="">
+  <h2>blog</h2>
   <!-- posts list -->
   <ul>
     {#if data.posts.length > 0}

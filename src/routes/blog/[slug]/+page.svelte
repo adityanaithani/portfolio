@@ -8,8 +8,8 @@
 </svelte:head>
 
 <div>
-  <article class="my-5">
-    <h1 class="text-hwhite">{data.title}</h1>
+  <article class=" my-5 font-sans">
+    <h1 class=" text-hwhite">{data.title}</h1>
     <p class="my-1 text-cliff">posted {data.date}</p>
     {#if data.updated}
       <p class="my-1 text-cliff">updated {data.updated}</p>
