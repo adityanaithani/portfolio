@@ -7,7 +7,7 @@
 </svelte:head>
 
 <div class="">
-  <h2>blog</h2>
+  <h2 class="underline decoration-sunflower/60">blog</h2>
   <!-- posts list -->
   <ul>
     {#if data.posts.length > 0}

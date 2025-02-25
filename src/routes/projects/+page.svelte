@@ -3,7 +3,7 @@
 </svelte:head>
 
 <div>
-  <h2>projects</h2>
+  <h2 class="underline decoration-lavender/60">projects</h2>
 
   <div>
     <ul>

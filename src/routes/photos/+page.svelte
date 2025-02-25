@@ -2,4 +2,4 @@
   <title>adi's photos</title>
 </svelte:head>
 
-<h1>coming soon!</h1>
+<h2 class="underline decoration-lava/60">coming soon!</h2>

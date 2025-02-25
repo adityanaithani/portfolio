@@ -2,7 +2,7 @@
   <title>about adi</title>
 </svelte:head>
 
-<div class="">
+<div class=" underline-offset-4">
   <img
     class="aspect-square max-w-36 rounded-md shadow-sm shadow-rock"
     src="/images/adi.png"
@@ -26,29 +26,33 @@
   <p>Previously, I:</p>
   <ul class="list-inside list-disc">
     <li>
-      graduated from <span class="text-lava">UMass</span>, majoring in
-      <span class="text-sea"> computer science </span> and minoring in
-      <span class="text-leaf">biology</span>
+      graduated from <span class="underline decoration-lava/60">UMass</span>,
+      majoring in
+      <span class="underline decoration-sea/80"> computer science </span> and
+      minoring in
+      <span class="underline decoration-leaf/60">biology</span>
     </li>
     <li>
-      worked as a software engineer for <span class="text-leaf">Leafpoint</span>
+      worked as a software engineer for <span
+        class="underline decoration-leaf/60">Leafpoint</span
+      >
     </li>
     <li>
-      interned for <a
-        class="font-bold text-lavender underline"
-        href="https://www.hypr.com/">HYPR</a
-      > as a software engineer
+      interned for <span class="underline decoration-lavender/60">HYPR</span> as
+      a software engineer
     </li>
     <li>
-      taught <span class="text-sunflower">CS 198C</span>, UMass CICS' intro to C
-      class
+      taught <span class="underline decoration-sunflower/60">CS 198C</span>,
+      UMass CICS' intro to C class
     </li>
     <li>
-      had the best time as a <span class="text-lava">resident assistant</span>
+      had the best time as a <span class="underline decoration-lava/60"
+        >resident assistant</span
+      >
     </li>
     <li>
       co-wrote a paper (awaiting peer review) on the discovery and annotation of
-      a <span class="text-leaf">novel bacteriophage</span>!
+      a <span class="underline decoration-leaf/60">novel bacteriophage</span>!
     </li>
   </ul>
   <!--
@@ -63,7 +67,7 @@
 
   <p class="border-2 border-dashed p-2">
     lastly, here's my <a
-      class="font-bold text-lavender underline"
+      class="font-bold text-lavender underline decoration-lavender/60"
       href="/about/resume">resume</a
     >!
   </p>

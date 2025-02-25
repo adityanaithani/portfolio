@@ -8,14 +8,11 @@
 </svelte:head>
 
 <div class="prose">
-  <article class="my-5 font-sans">
+  <article class=" my-5 font-sans">
     <h1 class="font-jetbrains text-hwhite">{data.title}</h1>
     <span class="my-1 font-jetbrains text-cliff">
       posted {data.date}{#if data.updated}, updated {data.updated}{/if}
     </span>
-    <!-- {#if data.updated}
-      <p class="my-1 font-jetbrains text-cliff">updated {data.updated}</p>
-    {/if} -->
     <svelte:component this={data.content} />
   </article>
 
@@ -37,7 +34,7 @@
 
 <style>
   :global(.prose h2) {
-    @apply font-jetbrains text-hwhite;
+    @apply mt-10 py-0 font-jetbrains text-hwhite;
   }
   :global(.prose p) {
     @apply text-chalk;
