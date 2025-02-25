@@ -2,7 +2,7 @@
   <title>about adi</title>
 </svelte:head>
 
-<div class=" underline-offset-4">
+<div class="underline-offset-4">
   <img
     class="aspect-square max-w-36 rounded-md shadow-sm shadow-rock"
     src="/images/adi.png"
