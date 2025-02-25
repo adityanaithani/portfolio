@@ -7,15 +7,18 @@
   <meta property="og:title" content={data.title} />
 </svelte:head>
 
-<div>
-  <article class=" my-5 font-sans">
-    <h1 class=" text-hwhite">{data.title}</h1>
-    <p class="my-1 text-cliff">posted {data.date}</p>
-    {#if data.updated}
-      <p class="my-1 text-cliff">updated {data.updated}</p>
-    {/if}
+<div class="prose">
+  <article class="my-5 font-sans">
+    <h1 class="font-jetbrains text-hwhite">{data.title}</h1>
+    <span class="my-1 font-jetbrains text-cliff">
+      posted {data.date}{#if data.updated}, updated {data.updated}{/if}
+    </span>
+    <!-- {#if data.updated}
+      <p class="my-1 font-jetbrains text-cliff">updated {data.updated}</p>
+    {/if} -->
     <svelte:component this={data.content} />
   </article>
+
   <!-- categories section -->
   {#if data.categories.length}
     <aside>
@@ -31,3 +34,15 @@
     </aside>
   {/if}
 </div>
+
+<style>
+  :global(.prose h2) {
+    @apply font-jetbrains text-hwhite;
+  }
+  :global(.prose p) {
+    @apply text-chalk;
+  }
+  :global(.prose img) {
+    @apply max-w-md;
+  }
+</style>

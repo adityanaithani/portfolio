@@ -3,9 +3,9 @@
 </svelte:head>
 
 <div class="">
-  <enhanced:img
+  <img
     class="aspect-square max-w-36 rounded-md shadow-sm shadow-rock"
-    src="./adi.png"
+    src="/images/adi.png"
     alt="me graduating!"
     title="me graduating!"
   />

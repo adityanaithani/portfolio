@@ -12,13 +12,13 @@
   <ul>
     {#if data.posts.length > 0}
       {#each data.posts as post}
-        <li class="my-5 flex gap-8">
-          <p class="my-0 text-cliff">{post.meta.date}</p>
-          <h2 class="my-0">
-            <a class="hover:text-sunflower" href={post.path}
-              >{post.meta.title}</a
-            >
-          </h2>
+        <li class="my-4 flex gap-8">
+          <span class="my-0">
+            <a
+              class="text-xl font-semibold hover:text-sunflower"
+              href={post.path}>{post.meta.title}</a
+            > <span class="my-0 text-lg text-cliff">{post.meta.date}</span>
+          </span>
         </li>
       {/each}
     {:else}
