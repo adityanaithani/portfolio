@@ -2,7 +2,7 @@
   <title>adi's projects</title>
 </svelte:head>
 
-<div>
+<div class="">
   <h2 class="underline decoration-lavender/60">projects</h2>
 
   <div>
@@ -98,3 +98,9 @@
     </ul>
   </div>
 </div>
+
+<style>
+  a {
+    @apply duration-200 ease-out hover:text-lavender;
+  }
+</style>

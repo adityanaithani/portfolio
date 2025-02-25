@@ -11,8 +11,8 @@
   />
   <p>
     <a
-      href="https://media4.giphy.com/media/v1.Y2lkPTc5MGI3NjExeDQ2aG10aWV6aGMxZWxuemIzanp6cW56MGw1a2t1dDV4d2VpMHB4biZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/xTiIzJSKB4l7xTouE8/giphy.gif"
-      class="font-bold">Hello there</a
+      href="/images/hellothere.gif"
+      class="font-bold underline decoration-leaf/60">Hello there</a
     >, I'm Aditya! Thanks for stopping by :&#41;.
   </p>
   <p>
@@ -64,7 +64,6 @@
   4. webring
   5. socials
   -->
-
   <p class="border-2 border-dashed p-2">
     lastly, here's my <a
       class="font-bold text-lavender underline decoration-lavender/60"

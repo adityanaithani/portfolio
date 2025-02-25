@@ -13,7 +13,7 @@ i guess it's better late than never.
 
 ---
 
-![my notes](/images/IMG_0233.jpg "my notes!!!!!")
+![my notes](/images/test.jpg "my notes!!!!!")
 _a page of very messy notes from discrete algorithms_
 
 ## tech stack
