@@ -2,7 +2,7 @@
   <title>adi's projects</title>
 </svelte:head>
 
-<div class="">
+<div>
   <h2 class="underline decoration-lavender/50">projects</h2>
 
   <div>
@@ -99,7 +99,7 @@
     @apply my-3;
   }
   #title {
-    @apply text-xl font-semibold text-hwhite underline decoration-lavender/60 underline-offset-4;
+    @apply text-xl font-semibold text-hwhite decoration-lavender/60 underline-offset-4 hover:underline;
   }
   #subtitle {
     @apply text-sm text-cliff;
