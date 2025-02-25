@@ -17,7 +17,7 @@
   </p>
   <p>
     I'm a software engineer and recent graduate from the University of
-    Massachuetts Amherst.
+    Massachusetts Amherst.
   </p>
   <p>
     I'm currently on the hunt for a full-time software engineering job, so if
