@@ -6,17 +6,19 @@
   <title>adi's blog</title>
 </svelte:head>
 
-<div class="my-5">
-  <h1>blog</h1>
+<div class="">
+  <h2 class="underline decoration-sunflower/60">blog</h2>
   <!-- posts list -->
   <ul>
     {#if data.posts.length > 0}
       {#each data.posts as post}
-        <li class="my-5">
-          <h2 class="my-0">
-            <a href={post.path}>{post.meta.title}</a>
-          </h2>
-          <p class="my-0">{post.meta.date}</p>
+        <li class="my-4 flex gap-8">
+          <span class="my-0">
+            <a
+              class="text-xl font-semibold hover:text-sunflower"
+              href={post.path}>{post.meta.title}</a
+            > <span class="my-0 text-lg text-cliff">{post.meta.date}</span>
+          </span>
         </li>
       {/each}
     {:else}

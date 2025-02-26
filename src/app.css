@@ -1,29 +1,29 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+@plugin "@tailwindcss/typography";
 
 @layer base {
   body {
-    @apply mx-auto my-20 block max-w-screen-md bg-bgwhite px-5 font-sans text-xl leading-relaxed text-copygrey dark:bg-darkmodegrey dark:text-bgwhite;
+    @apply mx-auto mt-auto block max-w-screen-md place-content-center bg-obsidian px-2 font-jetbrains text-xl leading-relaxed text-chalk;
+    @apply absolute inset-0 h-full w-full bg-obsidian bg-[radial-gradient(#333333_1px,transparent_1px)] [background-size:32px_32px];
   }
   h1 {
-    @apply font-sans text-4xl font-bold;
+    @apply py-5 text-4xl font-bold;
   }
   h2 {
-    @apply my-5 font-sans text-2xl font-bold;
+    @apply my-5 text-2xl font-bold;
   }
   h3 {
     @apply my-5 text-xl font-bold;
   }
 }
+
 p {
   @apply my-5 text-xl leading-relaxed;
 }
 a {
-  @apply hover:text-mantis dark:hover:text-mantis;
-}
-detail {
-  /* @apply open:ring-black/2 dark:open:ring-white/10 rounded-lg open:shadow-lg open:ring-1; */
+  @apply duration-200 ease-out hover:text-leaf;
 }
 summary {
   @apply select-none font-normal;

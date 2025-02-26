@@ -4,8 +4,10 @@ built with sveltekit, tailwindcss, and hosted on vercel.
 
 features todo:
 
-- [x] dark mode selector
-- [ ] blog
-- [ ] projects
+- [x] blog
+- [x] projects
 - [x] embed resume
-- [ ] finalize font + colour scheme
+- [x] finalize design
+- [ ] fix blog list styling
+- [ ] add site to umass webring
+- [ ] photo gallery
