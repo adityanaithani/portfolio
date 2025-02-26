@@ -99,7 +99,7 @@
     @apply my-3;
   }
   #title {
-    @apply text-xl font-semibold text-hwhite decoration-lavender/60 underline-offset-4 hover:underline;
+    @apply text-xl font-semibold text-hwhite decoration-lavender/60 underline-offset-4 duration-200 ease-in-out hover:underline hover:duration-200 hover:ease-in-out;
   }
   #subtitle {
     @apply text-sm text-cliff;

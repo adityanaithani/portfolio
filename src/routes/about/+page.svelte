@@ -1,3 +1,5 @@
+<script id="umaring_js" src="https://umaring.mkr.cx/ring.js?id=aditya"></script>
+
 <svelte:head>
   <title>about adi</title>
 </svelte:head>
@@ -16,8 +18,10 @@
     >, I'm Aditya! Thanks for stopping by :&#41;.
   </p>
   <p>
-    I'm a software engineer and recent graduate from the University of
-    Massachusetts Amherst.
+    I am a (currently unemployed lol) software engineer currently living in
+    Canada. I recently gradauted from the University of Massachusetts Amherst
+    and am actively looking for a full-time SWE role as I slowly go insane at
+    home.
   </p>
   <p>
     I'm currently on the hunt for a full-time software engineering job, so if
@@ -55,15 +59,7 @@
       a <span class="underline decoration-leaf/60">novel bacteriophage</span>!
     </li>
   </ul>
-  <!--
-  1. who i am 
-  2. what i do 
-  3. previously
-  lp/hypr
-  uma
-  4. webring
-  5. socials
-  -->
+
   <p class="border-2 border-dashed p-2">
     lastly, here's my <a
       class="font-bold text-lavender underline decoration-lavender/60"
@@ -72,9 +68,11 @@
   </p>
 
   <!-- finish this after you get your link on the repo (umaring on github) -->
-  <span><a href="/about">←</a> umass webring <a href="/about">→</a></span>
+  <div id="umaring">
+    <a href="/about">←</a> umass webring <a href="/about">→</a>
+  </div>
 
-  <p id="socials" class="space-x-2">
+  <div id="socials" class="my-5 space-x-2">
     <a
       href="mailto:aditya.naith@protonmail.com"
       target="_blank"
@@ -93,7 +91,7 @@
       class="fa-brands fa-github fa-xl"
       aria-label="GitHub"
     ></a>
-  </p>
+  </div>
 </div>
 
 <!--   <h1 class="my-5">hi, i'm aditya!</h1>
