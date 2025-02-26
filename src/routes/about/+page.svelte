@@ -1,5 +1,3 @@
-<script id="umaring_js" src="https://umaring.mkr.cx/ring.js?id=aditya"></script>
-
 <svelte:head>
   <title>about adi</title>
 </svelte:head>
@@ -67,10 +65,13 @@
     >!
   </p>
 
-  <!-- finish this after you get your link on the repo (umaring on github) -->
-  <div id="umaring">
-    <a href="/about">←</a> <a href="http://umaring.mkr.cx">umass webring</a>
-    <a href="/about">→</a>
+  <script id="umaring_js" src="https://umaring.mkr.cx/ring.js?id=adi"></script>
+  <!-- <div id="umaring"></div> -->
+
+  <div>
+    <a href="http://umaring.mkr.cx/adi/prev">←</a>
+    <a href="http://umaring.mkr.cx">umass webring</a>
+    <a href="http://umaring.mkr.cx/adi/next">→</a>
   </div>
 
   <div id="socials" class="my-5 space-x-2">
@@ -94,20 +95,3 @@
     ></a>
   </div>
 </div>
-
-<!--   <h1 class="my-5">hi, i'm aditya!</h1>
-  <p>welcome to my neck of the woods.🌲</p>
-  <p>
-    i recently graduated from the <a
-      class="font-semibold"
-      href="https://www.umass.edu">university of massachusetts amherst</a
-    > with a bachelor's in computer science and minor in biology.
-  </p>
-  <p>
-    i am currently searching for a full-time software engineering role, and in
-    the meantime, learning new things through a few personal projects.
-  </p>
-  <p>
-    this website exists mostly for me to keep a handle on my ever-changing array
-    of interests, but it's also here so i can share my work (of various forms).
-  </p> -->

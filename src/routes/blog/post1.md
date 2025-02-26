@@ -49,11 +49,11 @@ _This is just here because the content is so absurd_
 
 Excited that I finally had some direction, I got to work scribbling around in GoodNotes and ended up with a rough idea that ended up being inspired partly by these notes and partly by Obsidian, which all my typed notes live in (and why this blog is in Markdown!). It ended up looking something like this:
 
-![yay!!](/images/blog/1-1.png "i actually like this shitty illustration at least 50% more than the actual website, but i have no clue what about it makes it THAT much better")
+![draft illustration](/images/blog/1-1.png "i actually like this shitty illustration at least 50% more than the actual website, but i have no clue what about it makes it THAT much better")
 
 The last step was to mock this layout up in Figma and figure out a colour scheme. This is what that looked like:
 
-![](/images/blog/1-15.png "there was a LOT more fiddling with colours once I chose the final scheme, and it's still not perfect but it's fiiiine")
+![figma colour testing](/images/blog/1-15.png "there was a LOT more fiddling with colours once I chose the final scheme, and it's still not perfect but it's fiiiine")
 _As you can see I was toying with the idea of a light mode. That might be something to implement in the future, but since I see dark mode as the "right" way to look at this I'm not particularly motivated right now._
 
 I then finally got to work implementing it in Tailwind. This was absolutely the easiest part. I found a genius little tailwind snippet for the dot grid background from [Julien Thibeaut](https://ibelick.com/blog/create-grid-and-dot-backgrounds-with-css-tailwind-css), and I decided to forgo having green as the theme colour for every page in favour of associating each page with a different core theme colour. Other than some fiddling for the persistent navbar colours to serve that vision, that was it.
