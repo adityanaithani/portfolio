@@ -15,23 +15,23 @@
     <a
       href="/images/hellothere.gif"
       class="font-bold underline decoration-leaf/60">Hello there</a
-    >, I'm Aditya! Thanks for stopping by :&#41;.
+    >, I'm Aditya! Thanks for stopping by :)
   </p>
   <p>
-    I am a (currently unemployed lol) software engineer currently living in
-    Canada. I recently gradauted from the University of Massachusetts Amherst
-    and am actively looking for a full-time SWE role as I slowly go insane at
-    home.
+    I'm a recent CS grad currently looking for a full-time software engineering
+    role.
   </p>
   <p>
-    I'm currently on the hunt for a full-time software engineering job, so if
-    you or your friends are hiring, feel free to shoot me an email!
+    When I'm not losing my mind trying to remedy the former, I'm probably
+    spending hours on my latest micro-interest by reading too much wikipedia, or
+    writing/programming about it here.
   </p>
   <p>Previously, I:</p>
   <ul class="list-inside list-disc">
     <li>
-      graduated from <span class="underline decoration-lava/60">UMass</span>,
-      majoring in
+      graduated from <span class="underline decoration-lava/60"
+        >UMass Amherst</span
+      >, majoring in
       <span class="underline decoration-sea/80"> computer science </span> and
       minoring in
       <span class="underline decoration-leaf/60">biology</span>
@@ -40,10 +40,6 @@
       worked as a software engineer for <span
         class="underline decoration-leaf/60">Leafpoint</span
       >
-    </li>
-    <li>
-      interned for <span class="underline decoration-lavender/60">HYPR</span> as
-      a software engineer
     </li>
     <li>
       taught <span class="underline decoration-sunflower/60">CS 198C</span>,
@@ -55,8 +51,12 @@
       >
     </li>
     <li>
+      interned for <span class="underline decoration-lavender/60">HYPR</span> as
+      a software engineer
+    </li>
+    <li>
       co-wrote a paper (awaiting peer review) on the discovery and annotation of
-      a <span class="underline decoration-leaf/60">novel bacteriophage</span>!
+      a <span class="underline decoration-leaf/60">novel bacteriophage</span>
     </li>
   </ul>
 
@@ -69,7 +69,8 @@
 
   <!-- finish this after you get your link on the repo (umaring on github) -->
   <div id="umaring">
-    <a href="/about">←</a> umass webring <a href="/about">→</a>
+    <a href="/about">←</a> <a href="http://umaring.mkr.cx">umass webring</a>
+    <a href="/about">→</a>
   </div>
 
   <div id="socials" class="my-5 space-x-2">

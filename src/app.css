@@ -1,6 +1,7 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+@plugin "@tailwindcss/typography";
 
 @layer base {
   body {
@@ -23,9 +24,6 @@ p {
 }
 a {
   @apply duration-200 ease-out hover:text-leaf;
-}
-detail {
-  /* @apply open:ring-black/2 dark:open:ring-white/10 rounded-lg open:shadow-lg open:ring-1; */
 }
 summary {
   @apply select-none font-normal;

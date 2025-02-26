@@ -7,8 +7,8 @@
   <meta property="og:title" content={data.title} />
 </svelte:head>
 
-<div class="prose">
-  <article class=" my-5 font-sans">
+<div>
+  <article class="prose prose-a:underline my-5 font-sans">
     <h1 class="font-jetbrains text-hwhite">{data.title}</h1>
     <span class="my-1 font-jetbrains text-cliff">
       posted {data.date}{#if data.updated}, updated {data.updated}{/if}
@@ -19,15 +19,18 @@
   <!-- categories section -->
   {#if data.categories.length}
     <aside>
-      <ul class="justify-left flex flex-wrap gap-x-2">
+      <div class="justify-left flex flex-wrap gap-x-2">
         {#each data.categories as category}
-          <li class="border-1 rounded-sm bg-chalk/10 px-2 text-lg">
-            <a class="hover:text-sunflower" href="/blog/category/{category}">
+          <span class="border-1 rounded-sm bg-chalk/10 px-2 text-lg">
+            <a
+              class="no-underline hover:text-sunflower"
+              href="/blog/category/{category}"
+            >
               {category}
             </a>
-          </li>
+          </span>
         {/each}
-      </ul>
+      </div>
     </aside>
   {/if}
 </div>
@@ -40,6 +43,15 @@
     @apply text-chalk;
   }
   :global(.prose img) {
-    @apply max-w-md;
+    @apply max-w-2xl;
+  }
+  :global(.prose code) {
+    @apply bg-chalk/10 px-1 font-jetbrains text-lg;
+  }
+  :global(.prose a) {
+    @apply underline underline-offset-2;
+  }
+  :global(.prose li) {
+    @apply list-inside list-disc;
   }
 </style>

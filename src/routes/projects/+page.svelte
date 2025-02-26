@@ -7,7 +7,7 @@
 
   <div>
     <ul class="my-10">
-      <li>
+      <!-- <li>
         <span id="title" class=""
           ><a href="https://github.com/adityanaithani/coderacer">coderacer</a
           ></span
@@ -24,7 +24,7 @@
         -
         <span id="subtitle">javascript</span>
         <p id="desc">ui recreation from the martian</p>
-      </li>
+      </li> -->
       <li>
         <span id="title"
           ><a href="https://github.com/adityanaithani/genetools">genetools</a
