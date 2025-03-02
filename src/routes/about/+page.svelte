@@ -65,15 +65,6 @@
     >!
   </p>
 
-  <script id="umaring_js" src="https://umaring.mkr.cx/ring.js?id=adi"></script>
-  <!-- <div id="umaring"></div> -->
-
-  <div>
-    <a href="http://umaring.mkr.cx/adi/prev">←</a>
-    <a href="http://umaring.mkr.cx">umass webring</a>
-    <a href="http://umaring.mkr.cx/adi/next">→</a>
-  </div>
-
   <div id="socials" class="my-5 space-x-2">
     <a
       href="mailto:aditya.naith@protonmail.com"

@@ -7,7 +7,11 @@
   <title>adityanaithani</title>
 </svelte:head>
 
-<div id="logo" class="flex justify-center px-10">
+<div
+  id="logo"
+  class="flex-col
+  justify-center px-10"
+>
   <svg
     width="451"
     height="189"

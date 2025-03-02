@@ -10,11 +10,19 @@
 <header class="p-5"></header>
 
 <div id="container" class="">
-  <div id="vertical-content" class="flex flex-row space-x-24">
+  <div id="vertical-content" class="my-72 flex flex-row space-x-24">
     <Navbar />
 
     <slot></slot>
   </div>
 </div>
 
-<footer class="p-5"></footer>
+<footer class="my-10 flex justify-center py-5 text-cliff">
+  <script id="umaring_js" src="https://umaring.mkr.cx/ring.js?id=adi"></script>
+
+  <div>
+    <a href="http://umaring.mkr.cx/adi/prev">←</a>
+    <a href="http://umaring.mkr.cx">umass webring</a>
+    <a href="http://umaring.mkr.cx/adi/next">→</a>
+  </div>
+</footer>
