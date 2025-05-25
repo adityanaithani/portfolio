@@ -1,13 +1,16 @@
-# aditya's personal website
+# Adi's Website
 
 built with sveltekit, tailwindcss, and hosted on vercel.
 
-features todo:
+## Features Todo:
 
 - [x] blog
 - [x] projects
 - [x] embed resume
 - [x] finalize design
-- [ ] fix blog list styling
-- [ ] add site to umass webring
-- [ ] photo gallery
+- [x] fix blog list styling
+- [x] add site to umass webring
+- [x] photo gallery
+- [ ] optimize fonts
+- [ ] optimize for mobile
+- [ ] choose proper font for blog
