@@ -14,11 +14,7 @@
 <div>
   <h2 class="underline decoration-lava/60">gallery</h2>
 
-  <p class="text-sm">
-    I've been a huge photography nerd since I was a kid, and while I'm firmly an
-    amateur here are a few of my favourites, enjoy!
-  </p>
-  <p class="text-sm">Also, I fucking love water.</p>
+  <p class="text-sm"></p>
 
   <div
     id="photoGrid"
