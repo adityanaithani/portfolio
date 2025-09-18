@@ -3,7 +3,7 @@
 </script>
 
 <div>
-  <h2>category: {data.category}</h2>
+  <h2>Category: {data.category}</h2>
   <ul>
     {#if data.posts.length > 0}
       {#each data.posts as post}
@@ -12,7 +12,7 @@
         </li>
       {/each}
     {:else}
-      <li>no posts found :(</li>
+      <li>No posts found :(</li>
     {/if}
   </ul>
 </div>

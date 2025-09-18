@@ -5,6 +5,7 @@
 
 <svelte:head>
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link href="/prism-atom-dark.css" rel="stylesheet" />
 </svelte:head>
 
 <header class="p-5"></header>

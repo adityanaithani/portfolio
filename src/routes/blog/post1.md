@@ -1,10 +1,10 @@
 ---
-title: this website
+title: This Website
 date: 08/05/2024
 updated: 05/27/2025
 categories:
-  - devlog
-  - svelte
+  - code
+  - design
 ---
 
 So i've been meaning to put a personal website together since high school. I've made a few halfassed attempts, but thanks to one of my life's greater feats of procrastination, I only really started the summer after I graduated college.
@@ -13,7 +13,7 @@ So i've been meaning to put a personal website together since high school. I've 
 
 ---
 
-## tech stack
+## Tech Stack
 
 This site is built with Svelte and Tailwindcss, deployed through Vercel. The blog (what you're reading right now!) uses mdsvex, which is this super cool preprocessor that lets me write posts in Markdown instead of HTML - absolute nightmare avoided.
 
@@ -25,7 +25,7 @@ Also - halfway through building this site, Svelte 5 came out, which is a huge ch
 
 Vercel was _incredibly_ easy to use. Literally two clicks and my project auto-deploys every time I push to the repo, for _free_ which is excellent. If I accidentally get charged a hundred grand like that [one poor netlify user](https://www.reddit.com/r/webdev/comments/1b14bty/netlify_just_sent_me_a_104k_bill_for_a_simple/) however I will change my tune immediately.
 
-## design
+## Design
 
 I spent literal months (not joking, i'm slow) struggling to settle on this website's looks. I had a few vague ideas, but other than the nonnegotiable that something HAD to be green (my favourite colour, which if you know me is not hard to guess), I didn't have any particular direction I was looking in.
 
@@ -61,11 +61,11 @@ I then finally got to work implementing it in Tailwind. This was absolutely the 
 
 I'm really happy with the balance of (sort of) whimsy and techy-ness I managed to pull off with this design. I might want to incorporate some hand-drawn elements in the future to take away from the monospace everything, but that's definitely a lower priority.
 
-### typography
+### Typography
 
 `Jetbrains Mono` is my font of choice for everything except the blog's body text - I'm still looking for a font goes well with Jetbrains but is actually readable as long blocks of prose. For now we're just using the browser's default sans serif, which is _good enough_ for now.
 
-## future plans
+## Future Plans
 
 As-is, this is pretty much exactly how I want this site to be - there might be some adjustments here and there, but other than the todo list in the `README` I don't have any grand aspirations.
 I've just always wanted to have a little personal corner of the internet to call my own, and while it's taken me far too long to set up I'm glad I finally have something I'm happy with.
