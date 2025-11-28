@@ -7,85 +7,95 @@
 
   <div>
     <ul class="my-10">
-      <!-- <li>
-        <span id="title" class=""
-          ><a href="https://github.com/adityanaithani/coderacer">coderacer</a
+      <li>
+        <span id="title"
+          ><a href="https://github.com/adityanaithani/jobscan">JobScan</a></span
+        >
+        -
+        <span id="subtitle">python, docker, github actions</span>
+        <p id="desc">
+          Notifies you of job postings right when they go live, before Linkedin
+          and other job boards
+        </p>
+      </li>
+      <li></li>
+      <li>
+        <span id="title"
+          ><a href="https://github.com/adityanaithani/umaring"
+            >UMass Amherst Webring</a
           ></span
         >
         -
-        <span id="subtitle">typescript, nodeJS, reactJS</span>
-        <p id="desc">programming language typeracer game</p>
+        <span id="subtitle">rust, nix, docker, javascript</span>
+        <p id="desc">
+          Webring for UMass Amherst students, alumni, faculty (check it out
+          below!)
+        </p>
       </li>
       <li>
         <span id="title"
-          ><a href="https://github.com/adityanaithani/themartian-ui">rover-im</a
-          ></span
-        >
-        -
-        <span id="subtitle">javascript</span>
-        <p id="desc">ui recreation from the martian</p>
-      </li> -->
-      <li>
-        <span id="title"
-          ><a href="https://github.com/adityanaithani/genetools">genetools</a
+          ><a href="https://github.com/adityanaithani/genetools">GeneTools</a
           ></span
         >
         -
         <span id="subtitle">svelte, express, docker, mongodb</span>
-        <p id="desc">tool to process genetics data</p>
+        <p id="desc">Tool to process genetics data</p>
       </li>
       <li>
         <span id="title"
-          ><a href="https://github.com/adityanaithani/jumbo-bot">jumbo</a></span
+          ><a href="https://github.com/adityanaithani/SongAI">SongAI</a></span
+        >
+        -
+        <span id="subtitle">python, javascript, html</span>
+        <p id="desc">
+          A fullstack application that turns singing into a music video
+        </p>
+      </li>
+      <li>
+        <span id="title"
+          ><a href="https://github.com/adityanaithani/jumbo-bot">Jumbo</a></span
         >
         -
         <span id="subtitle">python, discord.py</span>
-        <p id="desc">flight tracking discord bot</p>
+        <p id="desc">Flight tracking discord bot</p>
       </li>
       <li>
         <span id="title"
           ><a
             href="https://github.com/umass-cs-326-s23/326-project-repo-team-33"
-            >driveU</a
+            >DriveU</a
           ></span
         >
         -
         <span id="subtitle">express, mongodb</span>
-        <p id="desc">ridesharing app for college students</p>
+        <p id="desc">Ridesharing app for college students</p>
       </li>
       <li>
-        <span id="title"><a href="/projects">ai bias</a></span>
+        <span id="title"><a href="/projects">AI Bias</a></span>
         -
         <span id="subtitle">jupyter notebook, python</span>
         <p id="desc">
-          bias evaluation in medical image classification ml models
+          Bias evaluation in medical image classification ML models
         </p>
       </li>
       <li>
-        <span id="title"><a href="/projects">bacteriophage discovery</a></span>
+        <span id="title"><a href="/projects">Bacteriophage Discovery</a></span>
         -
         <span id="subtitle">python, pymol</span>
         <p id="desc">
-          isolated, extracted, sequenced, annotated, modelled bacteriophage
+          Isolated, extracted, sequenced, annotated, modelled bacteriophage
           protein structures
         </p>
       </li>
       <li>
         <span id="title"
-          ><a href="/projects">bioinformatics research paper</a></span
+          ><a href="https://github.com/adityanaithani/TwitchGameTools"
+            >Twitch Game Tools</a
+          ></span
         >
         -
-        <span id="subtitle">python</span>
-        <p id="desc">
-          cowrote a paper on bacteriophage bioinformatics - currently awaiting
-          peer review.
-        </p>
-      </li>
-      <li>
-        <span id="title"><a href="/projects">twitch game tools</a></span>
-        -
         <span id="subtitle">nodeJS</span>
-        <p id="desc">dev kit for games that can interact with twitch chat</p>
+        <p id="desc">Dev kit for games that can interact with Twitch chat</p>
       </li>
     </ul>
   </div>
