@@ -28,13 +28,13 @@ const config = {
           return `{@html \`${html}\` }`;
         },
       },
-
-      preprocess: mdsvex(),
     }),
     vitePreprocess(),
   ],
   kit: {
-    adapter: adapter(),
+    adapter: adapter({
+      runtime: "nodejs20.x",
+    }),
   },
 };
 

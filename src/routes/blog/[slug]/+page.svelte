@@ -37,7 +37,7 @@
 
 <style>
   :global(.prose pre) {
-    @apply my-6;
+    @apply my-6 max-w-full overflow-x-auto;
   }
   :global(.prose h2) {
     @apply mt-10 py-0 font-jetbrains text-hwhite;
@@ -52,7 +52,7 @@
     @apply text-chalk;
   }
   :global(.prose img) {
-    @apply max-w-2xl p-4;
+    @apply w-full max-w-2xl h-auto mx-auto p-4;
   }
   :global(.prose pre code) {
     @apply block overflow-x-auto bg-obsidian/50 p-4 font-jetbrains text-lg;

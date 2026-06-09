@@ -9,12 +9,10 @@
 
 <div
   id="logo"
-  class="flex-col
-  justify-center px-10"
+  class="flex flex-col justify-center px-4 md:px-10"
 >
   <svg
-    width="451"
-    height="189"
+    class="w-[451px] max-w-full h-auto"
     viewBox="0 0 451 189"
     fill="none"
     xmlns="http://www.w3.org/2000/svg"
