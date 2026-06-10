@@ -1,18 +1,14 @@
 <script>
   import Layout from "./+layout.svelte";
-  let colours = ["lavender", "sea", "sunflower", "lava", "leaf"];
 </script>
 
 <svelte:head>
   <title>adityanaithani</title>
 </svelte:head>
 
-<div
-  id="logo"
-  class="flex flex-col justify-center px-4 md:px-10"
->
+<div id="logo" class="flex flex-col justify-center px-4 md:px-10">
   <svg
-    class="w-[451px] max-w-full h-auto"
+    class="h-auto w-[451px] max-w-full"
     viewBox="0 0 451 189"
     fill="none"
     xmlns="http://www.w3.org/2000/svg"

@@ -10,11 +10,14 @@
 
 <header class="p-5"></header>
 
-<div id="container" class="flex flex-col min-h-screen w-full">
-  <div id="vertical-content" class="my-auto py-8 flex flex-col md:flex-row justify-center items-center md:items-start space-y-12 md:space-y-0 md:space-x-24 w-full">
+<div id="container" class="flex min-h-screen w-full flex-col">
+  <div
+    id="vertical-content"
+    class="my-auto flex w-full flex-col items-center justify-center space-y-12 py-8 md:flex-row md:items-start md:space-x-24 md:space-y-0"
+  >
     <Navbar />
 
-    <div class="w-full max-w-full min-w-0">
+    <div class="w-full min-w-0 max-w-full">
       <slot></slot>
     </div>
   </div>
