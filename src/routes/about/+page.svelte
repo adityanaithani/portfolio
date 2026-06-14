@@ -68,8 +68,10 @@
       >, I'm Aditya! Thanks for stopping by :)
     </p>
     <p>
-      I'm a software engineer fascinated by the breadth of impact tech can have
-      - I love working on developing intersections between CS and things like
+      I'm a software engineer fascinated by the breadth of impact tech can have.
+      I've done quite the mix of frontend/backend/design work, so more than any
+      explicit role I'm interested in developing unique intersections between
+      tech and
       <button
         id="careerInterests"
         type="button"
