@@ -3,7 +3,7 @@
 </script>
 
 <div>
-  <h2>Category: {data.category}</h2>
+  <h2>{data.category}</h2>
   <ul>
     {#if data.posts.length > 0}
       {#each data.posts as post}
