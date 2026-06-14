@@ -8,94 +8,92 @@
   <div>
     <ul class="my-10">
       <li>
-        <span id="title"
+        <span class="project-title"
+          ><a href="https://github.com/adityanaithani/headway">Headway</a></span
+        >
+        -
+        <span class="project-subtitle">next, react, tailwind</span>
+        <p class="project-desc">
+          Advance calendar-integrated transit route planner
+        </p>
+      </li>
+      <li>
+        <span class="project-title"
+          ><a href="https://github.com/adityanaithani/sclibble">sCLIbble</a
+          ></span
+        >
+        -
+        <span class="project-subtitle">typer, rich, questionary</span>
+        <p class="project-desc">Scrobble iPod listens to last.fm via CLI</p>
+      </li>
+      <li>
+        <span class="project-title"
           ><a href="https://github.com/adityanaithani/jobscan">JobScan</a></span
         >
         -
-        <span id="subtitle">python, docker, github actions</span>
-        <p id="desc">
-          Notifies you of job postings right when they go live, before Linkedin
-          and other job boards
-        </p>
+        <span class="project-subtitle">python, docker, github actions</span>
+        <p class="project-desc">Job postings right when they go live</p>
       </li>
-      <li></li>
       <li>
-        <span id="title"
+        <span class="project-title"
           ><a href="https://github.com/adityanaithani/umaring"
             >UMass Amherst Webring</a
           ></span
         >
         -
-        <span id="subtitle">rust, nix, docker, javascript</span>
-        <p id="desc">
-          Webring for UMass Amherst students, alumni, faculty (check it out
-          below!)
+        <span class="project-subtitle">rust, docker, typescript</span>
+        <p class="project-desc">
+          Webring for UMass Amherst students, alumni, faculty
         </p>
       </li>
       <li>
-        <span id="title"
-          ><a href="https://github.com/adityanaithani/genetools">GeneTools</a
-          ></span
-        >
-        -
-        <span id="subtitle">svelte, express, docker, mongodb</span>
-        <p id="desc">Tool to process genetics data</p>
-      </li>
-      <li>
-        <span id="title"
+        <span class="project-title"
           ><a href="https://github.com/adityanaithani/SongAI">SongAI</a></span
         >
         -
-        <span id="subtitle">python, javascript, html</span>
-        <p id="desc">
+        <span class="project-subtitle">python, javascript, html</span>
+        <p class="project-desc">
           A fullstack application that turns singing into a music video
         </p>
       </li>
       <li>
-        <span id="title"
+        <span class="project-title"
           ><a href="https://github.com/adityanaithani/jumbo-bot">Jumbo</a></span
         >
         -
-        <span id="subtitle">python, discord.py</span>
-        <p id="desc">Flight tracking discord bot</p>
+        <span class="project-subtitle">discord.py</span>
+        <p class="project-desc">Flight tracking discord bot</p>
       </li>
       <li>
-        <span id="title"
-          ><a
-            href="https://github.com/umass-cs-326-s23/326-project-repo-team-33"
-            >DriveU</a
-          ></span
-        >
+        <span class="project-title"><a href="/projects">AI Bias</a></span>
         -
-        <span id="subtitle">express, mongodb</span>
-        <p id="desc">Ridesharing app for college students</p>
-      </li>
-      <li>
-        <span id="title"><a href="/projects">AI Bias</a></span>
-        -
-        <span id="subtitle">jupyter notebook, python</span>
-        <p id="desc">
+        <span class="project-subtitle">jupyter</span>
+        <p class="project-desc">
           Bias evaluation in medical image classification ML models
         </p>
       </li>
       <li>
-        <span id="title"><a href="/projects">Bacteriophage Discovery</a></span>
+        <span class="project-title"
+          ><a href="/projects">Bacteriophage Discovery</a></span
+        >
         -
-        <span id="subtitle">python, pymol</span>
-        <p id="desc">
+        <span class="project-subtitle">pymol</span>
+        <p class="project-desc">
           Isolated, extracted, sequenced, annotated, modelled bacteriophage
           protein structures
         </p>
       </li>
       <li>
-        <span id="title"
+        <span class="project-title"
           ><a href="https://github.com/adityanaithani/TwitchGameTools"
             >Twitch Game Tools</a
           ></span
         >
         -
-        <span id="subtitle">nodeJS</span>
-        <p id="desc">Dev kit for games that can interact with Twitch chat</p>
+        <span class="project-subtitle">node</span>
+        <p class="project-desc">
+          Dev kit for games that can interact with Twitch chat
+        </p>
       </li>
     </ul>
   </div>
@@ -108,13 +106,13 @@
   li {
     @apply my-3;
   }
-  #title {
+  .project-title {
     @apply text-xl font-semibold text-hwhite decoration-lavender/60 underline-offset-4 duration-200 ease-in-out hover:underline hover:duration-200 hover:ease-in-out;
   }
-  #subtitle {
+  .project-subtitle {
     @apply text-sm text-cliff;
   }
-  #desc {
+  .project-desc {
     @apply my-0 text-lg;
   }
 </style>

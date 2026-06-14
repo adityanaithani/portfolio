@@ -25,3 +25,6 @@ vite.config.ts.timestamp-*
 
 # Tailwind
 tailwind.config.js
+
+# Testing
+misc/

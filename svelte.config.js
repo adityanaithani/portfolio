@@ -19,6 +19,7 @@ const config = {
     mdsvex({
       // The default mdsvex extension is .svx; this overrides that.
       extensions: [".md"],
+      layout: "./src/lib/components/MdsvexLayout.svelte",
       smartypants: {},
       highlight: {
         highlighter: async (code, lang = "text") => {
@@ -28,13 +29,13 @@ const config = {
           return `{@html \`${html}\` }`;
         },
       },
-
-      preprocess: mdsvex(),
     }),
     vitePreprocess(),
   ],
   kit: {
-    adapter: adapter(),
+    adapter: adapter({
+      runtime: "nodejs20.x",
+    }),
   },
 };
 

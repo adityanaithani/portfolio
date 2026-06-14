@@ -5,6 +5,7 @@ updated: 09/12/2025
 categories:
   - homelab
   - code
+  - hardware
 ---
 
 Like most people, I don't really put a lot of thought into storing/organizing my media.
@@ -225,9 +226,7 @@ So it's not perfect, and I will run out of storage sooner than later with zero e
 I've linked all of my research for this project in the section below, in case you'd like more detail on the processes I followed.
 Until then, I can finally stop stressing about having to choose between 1) losing all my data and 2) losing all my money.
 
-Thanks for reading!
-
-# References
+## References
 
 - [Configure Samba To Work Better With OS X](https://wiki.samba.org/index.php/Configure_Samba_to_Work_Better_with_Mac_OS_X)
 - [Configuring Samba Servers To Work Better With MacOS](https://www.youtube.com/watch?v=kLBfXrjvPso)

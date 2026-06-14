@@ -1,8 +1,9 @@
-# Adi's Website
+# Adi's Portfolio / Blog
 
-built with sveltekit, tailwindcss, and hosted on vercel.
+My little corner of the internet.
+Built with sveltekit, tailwindcss, and hosted on vercel.
 
-## Features Todo:
+## To-Do:
 
 - [x] blog
 - [x] projects
@@ -11,6 +12,8 @@ built with sveltekit, tailwindcss, and hosted on vercel.
 - [x] fix blog list styling
 - [x] add site to umass webring
 - [x] photo gallery
+- [ ] create mobile layout
+- [ ] optimize for SEO
+- [ ] re-title existing blog articles for SEO
 - [ ] optimize fonts
-- [ ] optimize for mobile
-- [ ] choose proper font for blog
+- [ ] choose better blog font
