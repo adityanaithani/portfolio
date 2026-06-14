@@ -14,7 +14,7 @@
   <a
     class="duration-200 ease-out hover:text-lavender"
     href="/projects"
-    class:projects={routeId == "/projects"}>projects</a
+    class:projects={routeId === "/projects"}>projects</a
   >
   <a
     class=" duration-200 ease-out hover:text-sunflower"
@@ -24,7 +24,7 @@
   <a
     class="duration-200 ease-out hover:text-lava"
     href="/photos"
-    class:photos={routeId == "/photos"}>photos</a
+    class:photos={routeId === "/photos"}>photos</a
   >
 </nav>
 

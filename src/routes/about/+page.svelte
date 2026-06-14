@@ -59,9 +59,7 @@
   <div id="bodyText">
     <p>
       <button
-        href="/images/hellothere.gif"
         type="button"
-        target="_blank"
         class="bg-transparent text-inherit font-inherit inline cursor-pointer select-none border-none p-0 text-left align-baseline underline decoration-leaf/60 decoration-dashed duration-200"
         on:mouseenter={() => (hovered = true)}
         on:mouseleave={() => (hovered = false)}>Hello there</button
