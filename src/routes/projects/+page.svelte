@@ -9,32 +9,50 @@
     <ul class="my-10">
       <li>
         <span class="project-title"
-          ><a href="https://github.com/adityanaithani/headway">Headway</a></span
+          ><a href="/blog/building-jobscan">JobScan</a></span
         >
         -
-        <span class="project-subtitle">next, react, tailwind</span>
+        <span class="project-subtitle">python, docker, github actions</span>
         <p class="project-desc">
-          Advance calendar-integrated transit route planner
+          Job postings right when they go live <a
+            class="underline decoration-lavender/50"
+            href="https://github.com/adityanaithani/jobscan"
+            target="_blank"
+            rel="noopener noreferrer">github</a
+          >
         </p>
       </li>
       <li>
         <span class="project-title"
-          ><a href="https://github.com/adityanaithani/sclibble">sCLIbble</a
-          ></span
+          ><a href="/blog/building-sclibble">sCLIbble</a></span
         >
         -
         <span class="project-subtitle">typer, rich, questionary</span>
-        <p class="project-desc">Scrobble iPod listens to last.fm via CLI</p>
+        <p class="project-desc">
+          TUI iPod scrobbler <a
+            class="underline decoration-lavender/50"
+            href="https://github.com/adityanaithani/sclibble"
+            target="_blank"
+            rel="noopener noreferrer">github</a
+          >
+        </p>
       </li>
       <li>
         <span class="project-title"
-          ><a href="https://github.com/adityanaithani/jobscan">JobScan</a></span
+          ><a href="/blog/building-headway">Headway</a></span
         >
         -
-        <span class="project-subtitle">python, docker, github actions</span>
-        <p class="project-desc">Job postings right when they go live</p>
+        <span class="project-subtitle">next, react, tailwind</span>
+        <p class="project-desc">
+          Advance calendar-integrated transit route planner <a
+            class="underline decoration-lavender/50"
+            href="https://github.com/adityanaithani/headway"
+            target="_blank"
+            rel="noopener noreferrer">github</a
+          >
+        </p>
       </li>
-      <li>
+      <!-- <li>
         <span class="project-title"
           ><a href="https://github.com/adityanaithani/umaring"
             >UMass Amherst Webring</a
@@ -45,8 +63,8 @@
         <p class="project-desc">
           Webring for UMass Amherst students, alumni, faculty
         </p>
-      </li>
-      <li>
+      </li> -->
+      <!-- <li>
         <span class="project-title"
           ><a href="https://github.com/adityanaithani/SongAI">SongAI</a></span
         >
@@ -55,24 +73,24 @@
         <p class="project-desc">
           A fullstack application that turns singing into a music video
         </p>
-      </li>
-      <li>
+      </li> -->
+      <!-- <li>
         <span class="project-title"
           ><a href="https://github.com/adityanaithani/jumbo-bot">Jumbo</a></span
         >
         -
         <span class="project-subtitle">discord.py</span>
         <p class="project-desc">Flight tracking discord bot</p>
-      </li>
-      <li>
+      </li> -->
+      <!-- <li>
         <span class="project-title"><a href="/projects">AI Bias</a></span>
         -
         <span class="project-subtitle">jupyter</span>
         <p class="project-desc">
           Bias evaluation in medical image classification ML models
         </p>
-      </li>
-      <li>
+      </li> -->
+      <!-- <li>
         <span class="project-title"
           ><a href="/projects">Bacteriophage Discovery</a></span
         >
@@ -82,8 +100,8 @@
           Isolated, extracted, sequenced, annotated, modelled bacteriophage
           protein structures
         </p>
-      </li>
-      <li>
+      </li> -->
+      <!-- <li>
         <span class="project-title"
           ><a href="https://github.com/adityanaithani/TwitchGameTools"
             >Twitch Game Tools</a
@@ -94,7 +112,7 @@
         <p class="project-desc">
           Dev kit for games that can interact with Twitch chat
         </p>
-      </li>
+      </li> -->
     </ul>
   </div>
 </div>

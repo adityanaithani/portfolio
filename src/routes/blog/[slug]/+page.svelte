@@ -6,38 +6,42 @@
   function groupHeadingsInternal(container, level) {
     if (level > 6) return;
     const tagName = `H${level}`;
-    
+
     const children = Array.from(container.children);
     let currentDetails = null;
     let currentSummary = null;
-    
+
     for (let i = 0; i < children.length; i++) {
       const child = children[i];
-      if (child.tagName === 'SUMMARY') continue;
-      
+      if (child.tagName === "SUMMARY") continue;
+
       if (child.tagName === tagName) {
-        currentDetails = document.createElement('details');
-        currentDetails.className = 'group my-5';
+        currentDetails = document.createElement("details");
+        currentDetails.className = "group my-5";
         currentDetails.open = true; // headings start open by default so article is fully readable initially
-        
-        currentSummary = document.createElement('summary');
-        currentSummary.className = 'flex cursor-pointer select-none list-none items-center font-bold text-chalk outline-none duration-200 my-2';
-        
-        const arrow = document.createElement('span');
-        arrow.className = 'mr-2 transform text-sm text-cliff transition-transform duration-200 hover:text-leaf group-open:rotate-90';
-        arrow.textContent = '▶';
-        
+
+        currentSummary = document.createElement("summary");
+        currentSummary.className =
+          "flex cursor-pointer select-none list-none items-center font-bold text-chalk outline-none duration-200 my-2";
+
+        const arrow = document.createElement("span");
+        arrow.className =
+          "mr-2 transform text-sm text-cliff transition-transform duration-200 hover:text-leaf group-open:rotate-90";
+        arrow.textContent = "▶";
+
         currentSummary.appendChild(arrow);
-        
+
         container.insertBefore(currentDetails, child);
-        
-        child.style.margin = '0';
-        child.style.display = 'inline-block';
-        
+
+        child.style.margin = "0";
+        child.style.display = "inline-block";
+
         currentSummary.appendChild(child);
         currentDetails.appendChild(currentSummary);
       } else if (currentDetails) {
-        const isHigherOrEqualHeading = child.tagName.startsWith('H') && parseInt(child.tagName.substring(1)) <= level;
+        const isHigherOrEqualHeading =
+          child.tagName.startsWith("H") &&
+          parseInt(child.tagName.substring(1)) <= level;
         if (isHigherOrEqualHeading) {
           currentDetails = null;
           currentSummary = null;
@@ -46,16 +50,18 @@
         }
       }
     }
-    
+
     // Clean up details elements that have no content (only summary)
-    const detailsList = Array.from(container.children).filter(c => c.tagName === 'DETAILS');
-    detailsList.forEach(details => {
+    const detailsList = Array.from(container.children).filter(
+      (c) => c.tagName === "DETAILS",
+    );
+    detailsList.forEach((details) => {
       if (details.children.length <= 1) {
-        const summary = details.querySelector('summary');
+        const summary = details.querySelector("summary");
         if (summary) {
-          const heading = summary.querySelector('h1, h2, h3, h4, h5, h6');
+          const heading = summary.querySelector("h1, h2, h3, h4, h5, h6");
           if (heading) {
-            heading.removeAttribute('style');
+            heading.removeAttribute("style");
             container.insertBefore(heading, details);
           }
         }
@@ -68,16 +74,16 @@
   }
 
   async function makeHeadingsCollapsible() {
-    if (typeof window === 'undefined') return;
+    if (typeof window === "undefined") return;
     await tick();
-    const container = document.getElementById('blog-content');
+    const container = document.getElementById("blog-content");
     if (!container) return;
-    
+
     groupHeadingsInternal(container, 2);
   }
 
   // Reactive block to run when post data changes
-  $: if (typeof window !== 'undefined' && data) {
+  $: if (typeof window !== "undefined" && data) {
     makeHeadingsCollapsible();
   }
 </script>
@@ -124,7 +130,7 @@
     @apply my-6 max-w-full overflow-x-auto;
   }
   .prose :global(h1) {
-    @apply mt-0 py-0 font-serif text-5xl font-extrabold text-hwhite;
+    @apply mt-0 py-0 text-4xl font-extrabold text-hwhite;
   }
   .prose :global(h2) {
     @apply mt-0 py-0 font-jetbrains text-3xl font-bold tracking-tight text-hwhite;
