@@ -8,6 +8,9 @@
     "urbanism",
     "space",
     "music",
+    "food",
+    "quirky hardware",
+    "knowledge bases",
   ];
   let careerIndex = 0;
 
@@ -17,14 +20,17 @@
     "upgrading vintage iPods",
     "free-diving wikipedia",
     "overthinking Star Wars lore",
+    "reading the newest Halo novel",
     "tinkering with my homelab",
     "building mechanical keyboards",
     "reading weird sci-fi",
+    "hacking old game consoles",
     "optimizing PC airflow",
-    "stalking eBay",
-    "hunting local shops for the best cortado",
+    "stalking eBay for vintage fashion",
+    "sampling all the cortado i can",
     "wandering art galleries",
-    "losing my voice at expo",
+    "perfecting my brunoise",
+    "optimizing my IDE setup",
   ];
   let personalIndex = Math.floor(Math.random() * personalInterests.length);
 
@@ -36,6 +42,7 @@
     personalIndex = (personalIndex + 1) % personalInterests.length;
   }
 
+  // for colour bar near footer
   const colours = [
     "bg-lava",
     "bg-sunflower",
@@ -66,10 +73,8 @@
       >, I'm Aditya! Thanks for stopping by :)
     </p>
     <p>
-      I'm a software engineer fascinated by the breadth of impact tech can have.
-      I've done quite the mix of frontend/backend/design work, so more than any
-      explicit role I'm interested in developing unique intersections between
-      tech and
+      I'm a software engineer who enjoys building in the backend/developer
+      tooling/AI space. I enjoy software that bridges the gap between tech and
       <button
         id="careerInterests"
         type="button"
@@ -91,6 +96,24 @@
       </button>.
     </p>
   </div>
+
+  <details open id="currently" class="group my-5">
+    <summary
+      class="flex cursor-pointer select-none list-none items-center font-bold text-chalk outline-none duration-200"
+    >
+      <span
+        class="mr-2 transform text-sm text-cliff transition-transform duration-200 hover:text-leaf group-open:rotate-90"
+        >▶</span
+      >
+      currently:
+    </summary>
+    <ul class="ml-4 mt-3 list-inside list-disc">
+      <li>automating things that annoy me</li>
+      <li>looking for a backend SWE role</li>
+      <li>writing about things that interest me</li>
+    </ul>
+  </details>
+
   <details id="previously" class="group my-5">
     <summary
       class="flex cursor-pointer select-none list-none items-center font-bold text-chalk outline-none duration-200"
@@ -99,13 +122,15 @@
         class="mr-2 transform text-sm text-cliff transition-transform duration-200 hover:text-leaf group-open:rotate-90"
         >▶</span
       >
-      previously, I:
+      previously:
     </summary>
     <ul class="ml-4 mt-3 list-inside list-disc">
-      <li>worked for a few startups</li>
-      <li>majored in CS and Biology at UMass Amherst</li>
-      <li>helped freshmen write Makefiles</li>
-      <li>discovered a novel bacteriophage</li>
+      <li>built CI/CD and AI features for Leafpoint</li>
+      <li>developed full-stack integations for HYPR</li>
+      <li>recieved a B.S. in CS and Biology from UMass Amherst</li>
+      <li>studied neuroscience at Amherst College</li>
+      <li>taught freshmen C and memory management</li>
+      <li>researched phage genetics and medical ML fairness</li>
       <li>
         <span
           class="group/dan relative inline-block cursor-pointer underline decoration-lava/60 decoration-dashed"
@@ -126,14 +151,14 @@
     </ul>
   </details>
   <p id="resume" class="border-2 border-dashed p-2">
-    if you're curious, here's my <a
+    lastly, here's my <a
       class="text-hwhite underline decoration-lavender/60 hover:text-lavender"
       href="/about/resume">resume</a
     >!
   </p>
   <div id="colourBar" class="my-4 flex flex-row space-x-2">
-    {#each colours as color}
-      <div class="h-2 w-2 rounded-sm {color}"></div>
+    {#each colours as colour}
+      <div class="h-2 w-2 rounded-sm {colour}"></div>
     {/each}
   </div>
   <div id="socials" class="my-5 space-x-2">
@@ -144,13 +169,13 @@
       aria-label="Email"
     ></a>
     <a
-      href="https://linkedin.com/in/aditya-naithani/"
+      href="https://linkedin.com/in/anaithani/"
       target="_blank"
       class="fa-brands fa-linkedin fa-xl"
       aria-label="LinkedIn"
     ></a>
     <a
-      href="https://github.com/anaithani"
+      href="https://github.com/adityanaithani"
       target="_blank"
       class="fa-brands fa-github fa-xl"
       aria-label="GitHub"
@@ -159,7 +184,7 @@
       href="https://www.last.fm/user/onionleg"
       target="_blank"
       class="fa-brands fa-square-lastfm fa-xl"
-      aria-label="Spotify"
+      aria-label="Last.fm"
     ></a>
     <a
       href="https://letterboxd.com/adityanaithani"
@@ -167,11 +192,11 @@
       class="fa-brands fa-square-letterboxd fa-xl"
       aria-label="Letterboxd"
     ></a>
-    <a
-      href="https://wikipedia.org/wiki/User:Adityanaithani"
+    <!-- <a
+      href="https://en.wikipedia.org/wiki/Special:Contributions/Adityanaithani"
       target="_blank"
       class="fa-brands fa-wikipedia-w fa-xl"
       aria-label="Wikipedia"
-    ></a>
+    ></a> -->
   </div>
 </div>

@@ -12,8 +12,8 @@ Built with sveltekit, tailwindcss, and hosted on vercel.
 - [x] fix blog list styling
 - [x] add site to umass webring
 - [x] photo gallery
-- [ ] create mobile layout
+- [x] create mobile layout
 - [ ] optimize for SEO
-- [ ] re-title existing blog articles for SEO
-- [ ] optimize fonts
-- [ ] choose better blog font
+- [x] re-title existing blog articles for SEO
+- [x] optimize fonts
+- [x] choose better blog font

@@ -1,5 +1,21 @@
 <script>
+  import { goto } from "$app/navigation";
   import Layout from "./+layout.svelte";
+
+  function handleLogoClick() {
+    goto("/about");
+  }
+
+  function handleLogoKeyDown(event) {
+    if (
+      event.key === "Enter" ||
+      event.key === " " ||
+      event.key === "Spacebar"
+    ) {
+      event.preventDefault();
+      goto("/about");
+    }
+  }
 </script>
 
 <svelte:head>
@@ -8,10 +24,14 @@
 
 <div id="logo" class="flex flex-col justify-center px-4 md:px-10">
   <svg
-    class="h-auto w-[451px] max-w-full"
+    class="h-auto w-[451px] max-w-full cursor-pointer"
     viewBox="0 0 451 189"
     fill="none"
     xmlns="http://www.w3.org/2000/svg"
+    on:click={handleLogoClick}
+    on:keydown={handleLogoKeyDown}
+    role="button"
+    tabindex="0"
   >
     <path
       id="logopath"
