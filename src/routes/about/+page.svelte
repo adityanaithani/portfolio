@@ -1,4 +1,33 @@
 <script>
+  export let data;
+  $: recentAlbums = data.recentAlbums || [];
+
+  let albums = data.recentAlbums || [];
+  let loading = false;
+
+  const periods = [
+    { label: "week", value: "7day" },
+    { label: "month", value: "1month" },
+    { label: "year", value: "12month" },
+  ];
+  let periodIndex = 0;
+
+  async function cyclePeriod() {
+    periodIndex = (periodIndex + 1) % periods.length;
+    const currentPeriod = periods[periodIndex].value;
+    loading = true;
+    try {
+      const res = await fetch(`/api/lastfm?period=${currentPeriod}`);
+      if (res.ok) {
+        albums = await res.json();
+      }
+    } catch (error) {
+      console.error("Error fetching albums:", error);
+    } finally {
+      loading = false;
+    }
+  }
+
   let hovered = false;
 
   const careerInterests = [
@@ -150,6 +179,57 @@
       </li>
     </ul>
   </details>
+
+  <div id="music" class="my-6">
+    <h3 class="my-5">
+      favourites this
+      <button
+        id="periodCycle"
+        type="button"
+        class="bg-transparent text-inherit font-inherit inline cursor-pointer select-none border-none p-0
+  text-left align-baseline underline decoration-lavender/60 duration-200 hover:text-lavender"
+        on:click={cyclePeriod}
+      >
+        {periods[periodIndex].label}
+      </button>:
+    </h3>
+
+    <div class="flex flex-col gap-0">
+      {#each albums as album}
+        <a
+          href={album.url}
+          target="_blank"
+          rel="noreferrer"
+          class="group flex items-center gap-2 rounded-md hover:border-lavender"
+        >
+          {#if album.cover}
+            <img
+              src={album.cover}
+              alt="{album.title} cover"
+              class="h-8 w-8 flex-shrink-0 object-cover"
+            />
+          {:else}
+            <div
+              class="flex h-8 w-8 flex-shrink-0 items-center justify-center rounded bg-rock text-xs text-cliff"
+            >
+              note
+            </div>
+          {/if}
+          <div class="grid min-w-0 flex-1 grid-cols-2">
+            <p
+              class="truncate text-sm font-medium text-chalk group-hover:text-lavender"
+            >
+              {album.title}
+            </p>
+            <p class="truncate text-xs text-cliff">
+              {album.artist}{album.album ? ` - ${album.album}` : ""}
+            </p>
+          </div>
+        </a>
+      {/each}
+    </div>
+  </div>
+
   <p id="resume" class="border-2 border-dashed p-2">
     lastly, here's my <a
       class="text-hwhite underline decoration-lavender/60 hover:text-lavender"
@@ -192,11 +272,5 @@
       class="fa-brands fa-square-letterboxd fa-xl"
       aria-label="Letterboxd"
     ></a>
-    <!-- <a
-      href="https://en.wikipedia.org/wiki/Special:Contributions/Adityanaithani"
-      target="_blank"
-      class="fa-brands fa-wikipedia-w fa-xl"
-      aria-label="Wikipedia"
-    ></a> -->
   </div>
 </div>

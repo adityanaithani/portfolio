@@ -5,7 +5,6 @@ export const fetchMarkdown = async () => {
   const allPosts = await Promise.all(
     iterablePosts.map(async ([path, resolver]) => {
       const { metadata } = await resolver();
-      //   const postPath = path.slice(11, -3);
       const slug = path.split("/").pop().slice(0, -3);
       const postPath = `/blog/${slug}`;
 
