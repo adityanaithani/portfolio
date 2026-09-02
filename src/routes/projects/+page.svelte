@@ -125,6 +125,6 @@
     @apply text-sm text-cliff;
   }
   .project-desc {
-    @apply my-0 text-lg;
+    @apply my-5 text-sm leading-relaxed;
   }
 </style>

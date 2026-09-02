@@ -14,8 +14,6 @@
 <div>
   <h2 class="underline decoration-lava/60">gallery</h2>
 
-  <p class="text-sm"></p>
-
   <div
     id="photoGrid"
     class="grid min-w-full auto-cols-max grid-flow-row grid-cols-1 gap-2 md:grid-cols-2 lg:grid-cols-3"

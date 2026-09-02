@@ -74,19 +74,19 @@
     <p>
       <button
         type="button"
-        class="bg-transparent text-inherit font-inherit inline cursor-pointer select-none border-none p-0 text-left align-baseline underline decoration-leaf/60 decoration-dashed duration-200"
+        class="bg-transparent font-inherit inline cursor-pointer select-none border-none p-0 text-left align-baseline underline decoration-leaf/60 decoration-dashed duration-200"
         on:mouseenter={() => (hovered = true)}
         on:mouseleave={() => (hovered = false)}>Hello there</button
-      >, I'm Aditya! I was born in Missouri, grew up in Vancouver, studied in
-      Amherst, and am based in Toronto. Currently checking off some bucket list
-      items while searching for interesting problems to work on.
+      >, I'm Aditya! I was born in Missouri, grew up in BC, studied in
+      Massachusetts, and am based in Ontario. Currently checking off some bucket
+      list items while searching for interesting problems to work on.
     </p>
     <p>
       Previously, I built OAuth integrations for cybersecurity startups, NLP
       features for vaccine clinics, and multimodal context pools for AI agents.
       In school I learned raytracing, annotated bacteriophage genomes, evaluated
       medical diagnostic ML models, and was part of the astronomy and product
-      management clubs. I also taught C and been a <span
+      management clubs. I also taught C and was a <span
         class="group/dan relative inline-block cursor-pointer underline decoration-lava/60 decoration-dashed"
       >
         resident assistant
@@ -95,18 +95,18 @@
         >
           <img
             src="/images/dan.gif"
-            alt="dan"
+            alt="is it a flex or not to be the cool RA"
             class="h-auto w-full rounded-sm"
           />
         </span>
-      </span> (often at the same time!) to college freshmen.
+      </span>, which was the best time.
     </p>
     <p>
       Outside of tech, you can catch me
       <button
         id="personalInterests"
         type="button"
-        class="bg-transparent text-inherit font-inherit inline cursor-pointer select-none border-none p-0 text-left align-baseline underline decoration-sunflower/60 duration-200 hover:text-sunflower"
+        class="bg-transparent font-inherit inline cursor-pointer select-none border-none p-0 text-left align-baseline underline decoration-sunflower/60 duration-200 hover:text-sunflower"
         on:click={cyclePersonal}
       >
         {personalInterests[personalIndex]}
