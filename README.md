@@ -1,9 +1,9 @@
-# Adi's Portfolio / Blog
+# aditya
 
-My little corner of the internet.
-Built with sveltekit, tailwindcss, and hosted on vercel.
+My little corner of the internet. Inspired by austere CS professor homepages, "the old web", and personal sites I stumble across.
+Built with sveltekit, tailwindcss, vercel.
 
-## To-Do:
+## todo:
 
 - [x] blog
 - [x] projects
@@ -13,7 +13,10 @@ Built with sveltekit, tailwindcss, and hosted on vercel.
 - [x] add site to umass webring
 - [x] photo gallery
 - [x] create mobile layout
-- [ ] optimize for SEO
 - [x] re-title existing blog articles for SEO
 - [x] optimize fonts
 - [x] choose better blog font
+- [x] rewrite about page for the 6th time
+- [ ] optimize for SEO
+- [ ] redesign blog UI (yeah i know)
+- [ ] choose different set of fonts (mono/sans, no serif)
