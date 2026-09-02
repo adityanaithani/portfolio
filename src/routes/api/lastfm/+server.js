@@ -23,7 +23,7 @@ export const GET = async ({ url }) => {
     }
 
     const data = await response.json();
-    const rawAlbums = data?.topalbums?.album?.slice(0, 4) ?? [];
+    const rawAlbums = data?.topalbums?.album?.slice(0, 3) ?? [];
 
     const albums = rawAlbums.map((album) => ({
       title: album.name,

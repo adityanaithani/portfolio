@@ -4,7 +4,7 @@
 
 @layer base {
   body {
-    @apply mx-auto min-h-screen max-w-screen-lg bg-obsidian px-4 font-jetbrains text-xl leading-relaxed text-chalk bg-[radial-gradient(#333333_1px,transparent_1px)] [background-size:32px_32px];
+    @apply mx-auto min-h-screen max-w-screen-lg bg-obsidian bg-[radial-gradient(#333333_1px,transparent_1px)] px-4 font-jetbrains text-xl leading-relaxed text-chalk [background-size:32px_32px];
   }
   h1 {
     @apply py-5 text-4xl font-bold;
@@ -18,7 +18,7 @@
 }
 
 p {
-  @apply my-5 text-xl leading-relaxed;
+  @apply my-5 text-sm leading-relaxed;
 }
 a {
   @apply duration-200 ease-out hover:text-leaf;

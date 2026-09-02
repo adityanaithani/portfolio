@@ -1,4 +1,5 @@
 <script>
+  // for music widget
   export let data;
   $: recentAlbums = data.recentAlbums || [];
 
@@ -28,44 +29,21 @@
     }
   }
 
+  //   for profile image hover
   let hovered = false;
 
-  const careerInterests = [
-    "healthcare",
-    "genetics",
-    "transit",
-    "urbanism",
-    "space",
-    "music",
-    "food",
-    "quirky hardware",
-    "knowledge bases",
-  ];
-  let careerIndex = 0;
-
+  //   for hobbies carousel
   const personalInterests = [
     "taking photos of water",
     `"playing" guitar`,
     "upgrading vintage iPods",
     "free-diving wikipedia",
     "overthinking Star Wars lore",
-    "reading the newest Halo novel",
-    "tinkering with my homelab",
-    "building mechanical keyboards",
-    "reading weird sci-fi",
     "hacking old game consoles",
-    "optimizing PC airflow",
-    "stalking eBay for vintage fashion",
-    "sampling all the cortado i can",
-    "wandering art galleries",
-    "perfecting my brunoise",
-    "optimizing my IDE setup",
+    "lurking r/sffpc",
+    "improving my knife skills",
   ];
   let personalIndex = Math.floor(Math.random() * personalInterests.length);
-
-  function cycleCareer() {
-    careerIndex = (careerIndex + 1) % careerInterests.length;
-  }
 
   function cyclePersonal() {
     personalIndex = (personalIndex + 1) % personalInterests.length;
@@ -99,22 +77,32 @@
         class="bg-transparent text-inherit font-inherit inline cursor-pointer select-none border-none p-0 text-left align-baseline underline decoration-leaf/60 decoration-dashed duration-200"
         on:mouseenter={() => (hovered = true)}
         on:mouseleave={() => (hovered = false)}>Hello there</button
-      >, I'm Aditya! Thanks for stopping by :)
+      >, I'm Aditya! I was born in Missouri, grew up in Vancouver, studied in
+      Amherst, and am based in Toronto. Currently checking off some bucket list
+      items while searching for interesting problems to work on.
     </p>
     <p>
-      I'm a software engineer who enjoys building in the backend/developer
-      tooling/AI space. I enjoy software that bridges the gap between tech and
-      <button
-        id="careerInterests"
-        type="button"
-        class="bg-transparent text-inherit font-inherit inline cursor-pointer select-none border-none p-0 text-left align-baseline underline decoration-sea/60 duration-200 hover:text-sea"
-        on:click={cycleCareer}
+      Previously, I built OAuth integrations for cybersecurity startups, NLP
+      features for vaccine clinics, and multimodal context pools for AI agents.
+      In school I learned raytracing, annotated bacteriophage genomes, evaluated
+      medical diagnostic ML models, and was part of the astronomy and product
+      management clubs. I also taught C and been a <span
+        class="group/dan relative inline-block cursor-pointer underline decoration-lava/60 decoration-dashed"
       >
-        {careerInterests[careerIndex]}
-      </button>.
+        resident assistant
+        <span
+          class="pointer-events-none absolute bottom-full left-1/2 z-50 mb-2 hidden w-48 -translate-x-1/2 rounded-md border border-rock bg-obsidian p-1 shadow-lg group-hover/dan:block"
+        >
+          <img
+            src="/images/dan.gif"
+            alt="dan"
+            class="h-auto w-full rounded-sm"
+          />
+        </span>
+      </span> (often at the same time!) to college freshmen.
     </p>
     <p>
-      When I'm not writing code, you can catch me
+      Outside of tech, you can catch me
       <button
         id="personalInterests"
         type="button"
@@ -126,103 +114,52 @@
     </p>
   </div>
 
-  <details open id="currently" class="group my-5">
-    <summary
-      class="flex cursor-pointer select-none list-none items-center font-bold text-chalk outline-none duration-200"
-    >
-      <span
-        class="mr-2 transform text-sm text-cliff transition-transform duration-200 hover:text-leaf group-open:rotate-90"
-        >▶</span
-      >
-      currently:
-    </summary>
-    <ul class="ml-4 mt-3 list-inside list-disc">
-      <li>automating things that annoy me</li>
-      <li>looking for a backend SWE role</li>
-      <li>writing about things that interest me</li>
-    </ul>
-  </details>
-
-  <details id="previously" class="group my-5">
-    <summary
-      class="flex cursor-pointer select-none list-none items-center font-bold text-chalk outline-none duration-200"
-    >
-      <span
-        class="mr-2 transform text-sm text-cliff transition-transform duration-200 hover:text-leaf group-open:rotate-90"
-        >▶</span
-      >
-      previously:
-    </summary>
-    <ul class="ml-4 mt-3 list-inside list-disc">
-      <li>built CI/CD and AI features for Leafpoint</li>
-      <li>developed full-stack integations for HYPR</li>
-      <li>recieved a B.S. in CS and Biology from UMass Amherst</li>
-      <li>studied neuroscience at Amherst College</li>
-      <li>taught freshmen C and memory management</li>
-      <li>researched phage genetics and medical ML fairness</li>
-      <li>
-        <span
-          class="group/dan relative inline-block cursor-pointer underline decoration-lava/60 decoration-dashed"
-        >
-          had the best time
-          <span
-            class="pointer-events-none absolute bottom-full left-1/2 z-50 mb-2 hidden w-48 -translate-x-1/2 rounded-md border border-rock bg-obsidian p-1 shadow-lg group-hover/dan:block"
-          >
-            <img
-              src="/images/dan.gif"
-              alt="dan"
-              class="h-auto w-full rounded-sm"
-            />
-          </span>
-        </span>
-        as a resident assistant
-      </li>
-    </ul>
-  </details>
-
-  <div id="music" class="my-6">
-    <h3 class="my-5">
-      favourites this
+  <div id="musicwidget" class="my-5">
+    <p class="mb-1 pb-1">
+      Favourite albums this
       <button
         id="periodCycle"
         type="button"
-        class="bg-transparent text-inherit font-inherit inline cursor-pointer select-none border-none p-0
-  text-left align-baseline underline decoration-lavender/60 duration-200 hover:text-lavender"
+        class="bg-transparent inline cursor-pointer select-none border-none p-0
+  text-left align-baseline underline decoration-leaf/60 duration-200 hover:text-leaf"
         on:click={cyclePeriod}
       >
         {periods[periodIndex].label}
       </button>:
-    </h3>
+    </p>
 
-    <div class="flex flex-col gap-0">
+    <div id="albumdisplay" class="flex flex-col gap-1">
+      {#if loading}
+        <p class="text-xs text-cliff">loading...</p>
+      {/if}
       {#each albums as album}
         <a
           href={album.url}
           target="_blank"
           rel="noreferrer"
-          class="group flex items-center gap-2 rounded-md hover:border-lavender"
+          class="group flex items-center gap-2 rounded-md py-[0px]"
         >
           {#if album.cover}
             <img
               src={album.cover}
               alt="{album.title} cover"
-              class="h-8 w-8 flex-shrink-0 object-cover"
+              class="h-8 w-8 flex-shrink-0 rounded-sm object-cover shadow-sm"
             />
           {:else}
             <div
               class="flex h-8 w-8 flex-shrink-0 items-center justify-center rounded bg-rock text-xs text-cliff"
             >
-              note
+              placeholder
             </div>
           {/if}
-          <div class="grid min-w-0 flex-1 grid-cols-2">
+          <div class="grid min-w-0 flex-1 grid-cols-3">
             <p
-              class="truncate text-sm font-medium text-chalk group-hover:text-lavender"
+              class="col-span-2 m-0 my-2 truncate p-0 py-1 text-left text-xs text-chalk group-hover:text-leaf"
             >
               {album.title}
             </p>
-            <p class="truncate text-xs text-cliff">
-              {album.artist}{album.album ? ` - ${album.album}` : ""}
+            <p class="m-0 my-2 truncate p-0 py-1 text-right text-xs text-cliff">
+              -- {album.artist}{album.album ? ` - ${album.album}` : ""}
             </p>
           </div>
         </a>
@@ -230,7 +167,7 @@
     </div>
   </div>
 
-  <p id="resume" class="border-2 border-dashed p-2">
+  <p id="resumewidget" class="border-2 border-dashed p-2">
     lastly, here's my <a
       class="text-hwhite underline decoration-lavender/60 hover:text-lavender"
       href="/about/resume">resume</a
@@ -241,35 +178,36 @@
       <div class="h-2 w-2 rounded-sm {colour}"></div>
     {/each}
   </div>
-  <div id="socials" class="my-5 space-x-2">
+  <div id="linkswidget" class="my-5 space-x-0">
+    <a
+      href="https://github.com/adityanaithani"
+      target="_blank"
+      class="fa-brands fa-github fa-md"
+      aria-label="GitHub"
+    ></a>
     <a
       href="mailto:aditya.naith@protonmail.com"
       target="_blank"
-      class="fa-solid fa-envelope fa-xl"
+      class="fa-solid fa-envelope fa-md"
       aria-label="Email"
     ></a>
     <a
       href="https://linkedin.com/in/anaithani/"
       target="_blank"
-      class="fa-brands fa-linkedin fa-xl"
+      class="fa-brands fa-linkedin fa-md"
       aria-label="LinkedIn"
     ></a>
-    <a
-      href="https://github.com/adityanaithani"
-      target="_blank"
-      class="fa-brands fa-github fa-xl"
-      aria-label="GitHub"
-    ></a>
+
     <a
       href="https://www.last.fm/user/onionleg"
       target="_blank"
-      class="fa-brands fa-square-lastfm fa-xl"
+      class="fa-brands fa-square-lastfm fa-md"
       aria-label="Last.fm"
     ></a>
     <a
       href="https://letterboxd.com/adityanaithani"
       target="_blank"
-      class="fa-brands fa-square-letterboxd fa-xl"
+      class="fa-brands fa-square-letterboxd fa-md"
       aria-label="Letterboxd"
     ></a>
   </div>
