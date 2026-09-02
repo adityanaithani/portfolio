@@ -1,6 +1,6 @@
-// TODO: move to env var
 import { json } from "@sveltejs/kit";
 import { LASTFM_API_KEY } from "$env/static/private";
+export const prerender = false;
 
 const USER = "onionleg";
 
