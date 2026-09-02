@@ -19,4 +19,5 @@ Built with sveltekit, tailwindcss, vercel.
 - [x] rewrite about page for the 6th time
 - [ ] optimize for SEO
 - [ ] redesign blog UI (yeah i know)
+- [ ] redesign projects page
 - [ ] choose different set of fonts (mono/sans, no serif)
