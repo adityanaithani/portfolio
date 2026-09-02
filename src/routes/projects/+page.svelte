@@ -8,48 +8,42 @@
   <div>
     <ul class="my-10">
       <li>
-        <span class="project-title"
-          ><a href="/blog/building-jobscan">JobScan</a></span
-        >
+        <span class="project-title">JobScan</span>
         -
         <span class="project-subtitle">python, docker, github actions</span>
         <p class="project-desc">
           Job postings right when they go live <a
-            class="underline decoration-lavender/50"
+            class="fa-brands fa-github fa-mdunderline decoration-lavender/50"
             href="https://github.com/adityanaithani/jobscan"
             target="_blank"
-            rel="noopener noreferrer">github</a
-          >
+            rel="noopener noreferrer"
+          ></a>
         </p>
       </li>
       <li>
-        <span class="project-title"
-          ><a href="/blog/building-sclibble">sCLIbble</a></span
-        >
+        <span class="project-title">sCLIbble</span>
         -
         <span class="project-subtitle">typer, rich, questionary</span>
         <p class="project-desc">
           TUI iPod scrobbler <a
-            class="underline decoration-lavender/50"
+            class="fa-brands fa-github fa-mdunderline decoration-lavender/50"
             href="https://github.com/adityanaithani/sclibble"
             target="_blank"
-            rel="noopener noreferrer">github</a
-          >
+            rel="noopener noreferrer"
+          ></a>
         </p>
       </li>
       <li>
-        <span class="project-title"
-          ><a href="/blog/building-headway">Headway</a></span
-        >
+        <span class="project-title">Headway</span>
         -
         <span class="project-subtitle">next, react, tailwind</span>
         <p class="project-desc">
           Advance calendar-integrated transit route planner <a
-            class="underline decoration-lavender/50"
+            class="fa-brands fa-github fa-md underline decoration-lavender/50"
             href="https://github.com/adityanaithani/headway"
             target="_blank"
-            rel="noopener noreferrer">github</a
-          >
+            rel="noopener noreferrer"
+          ></a>
         </p>
       </li>
       <!-- <li>
