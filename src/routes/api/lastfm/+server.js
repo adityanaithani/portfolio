@@ -1,8 +1,9 @@
 import { json } from "@sveltejs/kit";
-import { LASTFM_API_KEY } from "$env/static/private";
+import { env } from "$env/dynamic/private";
 export const prerender = false;
 
 const USER = "onionleg";
+const LASTFM_API_KEY = env.LASTFM_API_KEY;
 
 const VALID_PERIODS = ["7day", "1month", "12month"];
 
