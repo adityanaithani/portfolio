@@ -94,11 +94,18 @@
 </svelte:head>
 
 <div>
-  <article class="prose my-5 max-w-3xl font-serif prose-a:underline">
-    <h1 class="font-jetbrains text-hwhite">{data.title}</h1>
-    <span class="my-1 font-jetbrains text-cliff">
-      posted {data.date}{#if data.updated}, updated {data.updated}{/if}
-    </span>
+  <article class="prose my-0 py-0 prose-a:underline">
+    <h1>
+      {data.title}
+    </h1>
+    <div class="flex flex-col">
+      <span class="mb-0 text-xs uppercase text-cliff">
+        posted {data.date}
+      </span>
+      <span class="mb-0 text-xs uppercase text-cliff">
+        {#if data.updated}updated {data.updated}{/if}
+      </span>
+    </div>
     {#key data.title}
       <div id="blog-content">
         <svelte:component this={data.content} />
@@ -111,7 +118,7 @@
     <aside>
       <div class="justify-left flex flex-wrap gap-x-2">
         {#each data.categories as category}
-          <span class="border-1 rounded-sm bg-chalk/10 px-2 text-lg">
+          <span class="border-1 rounded-sm bg-chalk/10 px-2 text-sm">
             <a
               class="no-underline hover:text-sunflower"
               href="/blog/category/{category}"
@@ -127,55 +134,58 @@
 
 <style>
   .prose :global(pre) {
-    @apply my-6 max-w-full overflow-x-auto;
+    @apply overflow-x-auto font-normal;
   }
   .prose :global(h1) {
-    @apply mt-0 py-0 text-4xl font-extrabold text-hwhite;
+    @apply my-0 mb-0 pt-0 font-departure text-[22px] text-hwhite;
   }
   .prose :global(h2) {
-    @apply mt-0 py-0 font-jetbrains text-3xl font-bold tracking-tight text-hwhite;
+    @apply mt-0 py-0 font-departure text-[22px] tracking-tight text-hwhite;
   }
   .prose :global(h3) {
-    @apply mt-0 py-0 font-jetbrains text-2xl font-bold tracking-tight text-hwhite;
+    @apply mt-0 py-0 font-departure text-[22px] font-bold tracking-tight text-hwhite;
   }
   .prose :global(h4) {
-    @apply mt-0 py-0 font-jetbrains text-xl font-semibold tracking-tight text-hwhite;
+    @apply mt-0 py-0 font-departure text-[22px] font-semibold tracking-tight text-hwhite;
   }
   .prose :global(h5) {
-    @apply mt-0 py-0 font-jetbrains text-lg font-semibold tracking-tight text-hwhite;
+    @apply mt-0 py-0 font-departure text-[22px] font-semibold tracking-tight text-hwhite;
   }
   .prose :global(h6) {
-    @apply mt-0 py-0 font-jetbrains text-base font-semibold tracking-tight text-hwhite;
+    @apply mt-0 py-0 font-departure text-[22px] font-semibold tracking-tight text-hwhite;
   }
   .prose :global(p) {
-    @apply text-lg text-chalk;
+    @apply font-neon text-sm font-normal leading-relaxed text-hwhite antialiased;
   }
   .prose :global(img) {
     @apply mx-auto my-0 h-auto w-full max-w-2xl py-1;
   }
   /* code block */
   .prose :global(pre code) {
-    @apply block overflow-x-auto bg-obsidian/50 p-4 font-jetbrains text-lg;
+    @apply block overflow-x-auto bg-obsidian/50 p-4 text-lg;
   }
   /* code snippet */
   .prose :global(code) {
-    @apply bg-rock px-1 font-jetbrains text-base;
+    @apply bg-rock px-1 text-sm font-normal;
   }
   .prose :global(code::before),
   .prose :global(code::after) {
     content: "" !important;
   }
   .prose :global(a) {
-    @apply text-lg underline underline-offset-2 hover:text-sunflower;
+    @apply text-sm font-normal underline underline-offset-2 hover:text-sunflower;
   }
   .prose :global(ul) {
-    @apply list-inside list-disc text-lg leading-tight decoration-cliff/80;
+    @apply my-0 list-inside list-disc text-lg leading-tight decoration-cliff/80;
   }
   .prose :global(ul a) {
-    @apply font-jetbrains text-base leading-tight;
+    @apply my-0 text-sm leading-tight;
   }
   .prose :global(ol) {
-    @apply list-inside list-decimal text-lg leading-tight decoration-cliff/80;
+    @apply my-0 list-inside list-decimal text-lg leading-tight decoration-cliff/80;
+  }
+  .prose :global(li) {
+    @apply my-0 text-sm leading-relaxed decoration-cliff/80;
   }
   .prose :global(blockquote) {
     @apply border-l-4 border-sunflower pl-4 italic;

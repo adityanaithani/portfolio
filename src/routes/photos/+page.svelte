@@ -12,7 +12,7 @@
 </svelte:head>
 
 <div>
-  <h2 class="underline decoration-lava/60">gallery</h2>
+  <!-- <h2 class="underline decoration-lava/60">gallery</h2> -->
 
   <div
     id="photoGrid"

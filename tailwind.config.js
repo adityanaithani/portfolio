@@ -6,8 +6,14 @@ module.exports = {
   theme: {
     extend: {
       fontFamily: {
-        jetbrains: ["JetBrains Mono", "monospace"],
-        serif: ["Lora", "Georgia", "ui-serif", "serif"],
+        neon: [
+          '"Monaspace Neon"',
+          {
+            fontFeatureSettings:
+              '"calt", "liga", "dlig", "ss01", "ss02", "ss03", "ss05", "ss06", "ss07", "ss08", "ss09", "ss10"',
+          },
+        ],
+        departure: ['"Departure"'],
       },
       typography: {
         DEFAULT: {
@@ -39,11 +45,11 @@ module.exports = {
       },
     },
     colors: {
-      obsidian: "#222222",
-      rock: "#333333",
-      chalk: "#D9D9D9",
+      obsidian: "#121212",
+      rock: "#222222",
+      chalk: "#E0E0E0",
       cliff: "#A5A5A5",
-      hwhite: "#EEEEEE",
+      hwhite: "#D9D9D9",
       lavender: "#A59FE9",
       sea: "#0084A4",
       sunflower: "#FFBA37",

@@ -3,10 +3,8 @@
 </svelte:head>
 
 <div>
-  <h2 class="underline decoration-lavender/50">projects</h2>
-
   <div>
-    <ul class="my-10">
+    <ul>
       <li>
         <span class="project-title">JobScan</span>
         -
@@ -17,9 +15,11 @@
             href="https://github.com/adityanaithani/jobscan"
             target="_blank"
             rel="noopener noreferrer"
+            aria-label="JobScan on GitHub"
           ></a>
         </p>
       </li>
+      <hr class="my-4 border-t-2 border-t-hwhite/5" />
       <li>
         <span class="project-title">sCLIbble</span>
         -
@@ -30,9 +30,11 @@
             href="https://github.com/adityanaithani/sclibble"
             target="_blank"
             rel="noopener noreferrer"
+            aria-label="sCLIbble on GitHub"
           ></a>
         </p>
       </li>
+      <hr class="my-4 border-t-2 border-t-hwhite/5" />
       <li>
         <span class="project-title">Headway</span>
         -
@@ -43,6 +45,22 @@
             href="https://github.com/adityanaithani/headway"
             target="_blank"
             rel="noopener noreferrer"
+            aria-label="Headway on GitHub"
+          ></a>
+        </p>
+      </li>
+      <hr class="my-4 border-t-2 border-t-hwhite/5" />
+      <li>
+        <span class="project-title">SongAI</span>
+        -
+        <span class="project-subtitle">python, javascript</span>
+        <p class="project-desc">
+          AI music video generation for HackUMass XII <a
+            class="fa-brands fa-github fa-md underline decoration-lavender/50"
+            href="https://github.com/adityanaithani/songai"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="SongAI on GitHub"
           ></a>
         </p>
       </li>
@@ -115,16 +133,13 @@
   a {
     @apply duration-200 ease-out hover:text-lavender;
   }
-  li {
-    @apply my-3;
-  }
   .project-title {
-    @apply text-xl font-semibold text-hwhite decoration-lavender/60 underline-offset-4 duration-200 ease-in-out hover:underline hover:duration-200 hover:ease-in-out;
+    @apply text-lg font-semibold text-hwhite decoration-lavender/60 underline-offset-4 duration-200 ease-in-out hover:underline hover:duration-200 hover:ease-in-out;
   }
   .project-subtitle {
-    @apply text-sm text-cliff;
+    @apply font-departure text-xs uppercase text-cliff;
   }
   .project-desc {
-    @apply my-5 text-sm leading-relaxed;
+    @apply mt-1 text-sm leading-relaxed;
   }
 </style>

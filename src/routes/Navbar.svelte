@@ -4,12 +4,13 @@
   $: routeId = $page.route.id;
 </script>
 
-<nav class="my-2 flex flex-row md:flex-col flex-wrap justify-center md:justify-start gap-x-3 gap-y-1 md:gap-x-0 md:space-y-1 text-[18px] md:text-2xl text-hwhite">
-  <a class="duration-200 ease-out hover:text-sea" href="/">home</a>
+<nav
+  class="my-2 flex flex-row flex-wrap justify-start gap-x-3 gap-y-1 font-departure text-xl text-hwhite"
+>
   <a
-    class="duration-200 ease-out hover:text-leaf"
-    href="/about"
-    class:about={routeId?.startsWith("/about")}>about</a
+    class="duration-200 ease-out hover:text-lavender"
+    href="/"
+    class:home={routeId === "/"}>home</a
   >
   <a
     class="duration-200 ease-out hover:text-lavender"
@@ -29,7 +30,7 @@
 </nav>
 
 <style>
-  .about {
+  .home {
     color: #00be78;
   }
   .projects {
