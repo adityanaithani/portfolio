@@ -5,19 +5,10 @@ Built with sveltekit, tailwindcss, vercel.
 
 ## todo:
 
-- [x] blog
-- [x] projects
-- [x] embed resume
-- [x] finalize design
-- [x] fix blog list styling
-- [x] add site to umass webring
-- [x] photo gallery
-- [x] create mobile layout
-- [x] re-title existing blog articles for SEO
-- [x] optimize fonts
-- [x] choose better blog font
-- [x] rewrite about page for the 6th time
-- [ ] optimize for SEO
-- [ ] redesign blog UI (yeah i know)
-- [ ] redesign projects page
-- [ ] choose different set of fonts (mono/sans, no serif)
+- [ ] 'optimize' for SEO
+- [x] redesign blog UI (yeah i know)
+- [x] redesign projects page
+- [x] choose different set of fonts (mono/sans, no serif)
+- [ ] rebuild blog tag pages / styling
+- [ ] rewrite/trim down existing blog articles
+- [ ] revise blog readability later down the road

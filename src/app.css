@@ -3,8 +3,24 @@
 @tailwind utilities;
 
 @layer base {
+  @font-face {
+    font-family: "Monaspace Neon";
+    src: url("/fonts/monaspace-neon.woff2") format("woff2");
+    font-weight: 200 800;
+    font-stretch: 100% 125%;
+    font-style: normal;
+    font-display: swap;
+  }
+  @font-face {
+    font-family: "Departure";
+    src: url("/fonts/departure.woff2") format("woff2");
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+  }
+
   body {
-    @apply mx-auto min-h-screen max-w-screen-lg bg-obsidian bg-[radial-gradient(#333333_1px,transparent_1px)] px-4 font-jetbrains text-xl leading-relaxed text-chalk [background-size:32px_32px];
+    @apply font-neon mx-auto min-h-screen max-w-screen-lg bg-obsidian bg-[radial-gradient(#222222_1px,transparent_1px)] px-4 text-xl leading-relaxed text-chalk [background-size:32px_32px];
   }
 
   h1 {

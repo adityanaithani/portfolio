@@ -7,19 +7,21 @@
 </svelte:head>
 
 <div class="">
-  <h2 class="underline decoration-sunflower/60">blog</h2>
-  <!-- posts list -->
   <ul>
     {#if data.posts.length > 0}
       {#each data.posts as post}
-        <li class="my-4 flex gap-8">
+        <li class="mb-4 flex gap-8">
           <span class="my-0">
             <a
-              class="text-xl font-semibold hover:text-sunflower"
+              class="text-lg font-semibold text-hwhite decoration-sunflower/60 underline-offset-4 duration-200 ease-in-out hover:text-hwhite hover:underline hover:duration-200 hover:ease-in-out"
               href={post.path}>{post.meta.title}</a
-            > <span class="my-0 text-lg text-cliff">{post.meta.date}</span>
+            >
+            <span class="my-0 font-departure text-sm uppercase text-cliff"
+              >{post.meta.date}</span
+            >
           </span>
         </li>
+        <hr class="my-4 border-t-2 border-t-hwhite/5" />
       {/each}
     {:else}
       <li>no posts here :/</li>
