@@ -46,3 +46,18 @@ automates most of it):
 
 1. Bump deps + Vercel runtime, fix `Navbar.svelte`, `npm run build` → deploy.
 2. Later: `npx sv migrate svelte-5` for runes, one commit, verify build again.
+
+## Step 1 — done
+
+Installed: svelte 5.57, @sveltejs/kit 2.70, vite 8, vite-plugin-svelte 7,
+enhanced-img 0.11, mdsvex 0.12.8, adapter-vercel 6.3.4. Build passes.
+
+Two extra fixes were needed:
+- `svelte.config.js`: mdsvex `layout` path must be absolute (`path.resolve(...)`)
+  — new mdsvex resolves it relative to each .md file, and posts live in `content/`.
+- `Navbar.svelte` migrated to `$app/state` + `$derived` (done as runes, was touched anyway).
+
+Pre-existing issue (not from upgrade): `postbuild` svelte-sitemap fails because
+no pages are prerendered — there is no static HTML to scan. Fix either by adding
+`export const prerender = true` to `+layout.js` (site is static content; the
+lastfm API route already opts out) or by dropping the sitemap step.

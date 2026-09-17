@@ -1,7 +1,7 @@
 <script>
-  import { page } from "$app/stores";
+  import { page } from "$app/state";
 
-  $: routeId = $page.route.id;
+  let routeId = $derived(page.route.id);
 </script>
 
 <nav
