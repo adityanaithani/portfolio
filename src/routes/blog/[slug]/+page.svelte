@@ -1,7 +1,9 @@
 <script>
+  import { run } from 'svelte/legacy';
+
   import { onMount, tick } from "svelte";
 
-  export let data;
+  let { data } = $props();
 
   function groupHeadingsInternal(container, level) {
     if (level > 6) return;
@@ -83,9 +85,11 @@
   }
 
   // Reactive block to run when post data changes
-  $: if (typeof window !== "undefined" && data) {
-    makeHeadingsCollapsible();
-  }
+  run(() => {
+    if (typeof window !== "undefined" && data) {
+      makeHeadingsCollapsible();
+    }
+  });
 </script>
 
 <svelte:head>
@@ -108,7 +112,7 @@
     </div>
     {#key data.title}
       <div id="blog-content">
-        <svelte:component this={data.content} />
+        <data.content />
       </div>
     {/key}
   </article>

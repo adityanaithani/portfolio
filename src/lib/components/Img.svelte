@@ -1,7 +1,13 @@
 <script>
-  export let src;
-  export let alt = "";
-  export let title = "";
+  /**
+   * @typedef {Object} Props
+   * @property {any} src
+   * @property {string} [alt]
+   * @property {string} [title]
+   */
+
+  /** @type {Props} */
+  let { src, alt = "", title = "" } = $props();
 </script>
 
 <figure class="mx-auto my-6 flex flex-col items-center justify-center">

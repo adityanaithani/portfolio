@@ -1,6 +1,7 @@
 import adapter from "@sveltejs/adapter-vercel";
 import { vitePreprocess } from "@sveltejs/vite-plugin-svelte";
 import { escapeSvelte, mdsvex } from "mdsvex";
+import path from "path";
 import { createHighlighter } from "shiki";
 
 const theme = "one-dark-pro";
@@ -19,7 +20,7 @@ const config = {
     mdsvex({
       // The default mdsvex extension is .svx; this overrides that.
       extensions: [".md"],
-      layout: "./src/lib/components/MdsvexLayout.svelte",
+      layout: path.resolve("src/lib/components/MdsvexLayout.svelte"),
       smartypants: {},
       highlight: {
         highlighter: async (code, lang = "text") => {
@@ -34,7 +35,7 @@ const config = {
   ],
   kit: {
     adapter: adapter({
-      runtime: "nodejs20.x",
+      runtime: "nodejs22.x",
     }),
   },
 };
