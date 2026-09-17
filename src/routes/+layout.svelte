@@ -1,6 +1,13 @@
 <script>
   import "../app.css";
   import Navbar from "./Navbar.svelte";
+  /**
+   * @typedef {Object} Props
+   * @property {import('svelte').Snippet} [children]
+   */
+
+  /** @type {Props} */
+  let { children } = $props();
 </script>
 
 <svelte:head>
@@ -18,7 +25,7 @@
 >
   <div id="content" class="flex w-full">
     <div class="my-5 w-full min-w-0 max-w-full">
-      <slot></slot>
+      {@render children?.()}
     </div>
   </div>
 </div>

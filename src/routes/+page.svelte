@@ -2,7 +2,7 @@
   import { onMount } from "svelte";
 
   // music widget
-  let albums = [];
+  let albums = $state([]);
   let loading = false;
 
   const periods = [
@@ -10,7 +10,7 @@
     { label: "month", value: "1month" },
     { label: "year", value: "12month" },
   ];
-  let periodIndex = 0;
+  let periodIndex = $state(0);
 
   async function fetchAlbums(period) {
     loading = true;
@@ -34,7 +34,7 @@
   onMount(() => fetchAlbums(periods[0].value));
 
   //   profile image hover
-  let hovered = false;
+  let hovered = $state(false);
 
   //   hobbies carousel
   const personalInterests = [
@@ -47,7 +47,7 @@
     "lurking r/sffpc",
     "improving my knife skills",
   ];
-  let personalIndex = Math.floor(Math.random() * personalInterests.length);
+  let personalIndex = $state(Math.floor(Math.random() * personalInterests.length));
 
   function cyclePersonal() {
     personalIndex = (personalIndex + 1) % personalInterests.length;
@@ -79,8 +79,8 @@
       <button
         type="button"
         class=" bg-transparent font-inherit inline cursor-pointer select-none border-none p-0 text-left align-baseline underline decoration-leaf/60 decoration-dashed duration-200"
-        on:mouseenter={() => (hovered = true)}
-        on:mouseleave={() => (hovered = false)}>Hello there</button
+        onmouseenter={() => (hovered = true)}
+        onmouseleave={() => (hovered = false)}>Hello there</button
       >, I'm Aditya!
     </p>
     <p>
@@ -112,7 +112,7 @@
         id="personalInterests"
         type="button"
         class="bg-transparent font-inherit inline cursor-pointer select-none border-none p-0 text-left align-baseline font-departure underline decoration-sunflower/60 duration-200 hover:text-sunflower"
-        on:click={cyclePersonal}
+        onclick={cyclePersonal}
       >
         {personalInterests[personalIndex]}
       </button>.
@@ -127,7 +127,7 @@
         type="button"
         class="bg-transparent inline cursor-pointer select-none border-none p-0 text-left
   align-baseline font-departure underline decoration-leaf/60 duration-200 hover:text-leaf"
-        on:click={cyclePeriod}
+        onclick={cyclePeriod}
       >
         {periods[periodIndex].label}
       </button>:
