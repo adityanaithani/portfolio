@@ -1,7 +1,8 @@
 <script>
+  import { onMount } from "svelte";
+
   // music widget
-  export let data;
-  let albums = data.recentAlbums || [];
+  let albums = [];
   let loading = false;
 
   const periods = [
@@ -11,12 +12,10 @@
   ];
   let periodIndex = 0;
 
-  async function cyclePeriod() {
-    periodIndex = (periodIndex + 1) % periods.length;
-    const currentPeriod = periods[periodIndex].value;
+  async function fetchAlbums(period) {
     loading = true;
     try {
-      const res = await fetch(`/api/lastfm?period=${currentPeriod}`);
+      const res = await fetch(`/api/lastfm?period=${period}`);
       if (res.ok) {
         albums = await res.json();
       }
@@ -26,6 +25,13 @@
       loading = false;
     }
   }
+
+  async function cyclePeriod() {
+    periodIndex = (periodIndex + 1) % periods.length;
+    fetchAlbums(periods[periodIndex].value);
+  }
+
+  onMount(() => fetchAlbums(periods[0].value));
 
   //   profile image hover
   let hovered = false;

@@ -58,6 +58,7 @@ Two extra fixes were needed:
 - `Navbar.svelte` migrated to `$app/state` + `$derived` (done as runes, was touched anyway).
 
 Pre-existing issue (not from upgrade): `postbuild` svelte-sitemap fails because
-no pages are prerendered — there is no static HTML to scan. Fix either by adding
-`export const prerender = true` to `+layout.js` (site is static content; the
-lastfm API route already opts out) or by dropping the sitemap step.
+no pages are prerendered — there is no static HTML to scan. **Fixed:** added
+`export const prerender = true` to `+layout.js` and moved the lastfm fetch in
+`+page.svelte` client-side (deleted `+page.js`) so the home page can prerender
+without baking in stale music data.
